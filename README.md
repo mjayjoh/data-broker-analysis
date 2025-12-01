@@ -7,7 +7,11 @@ Data brokers buy and aggregate billions of data elements on individuals, selling
 ```
 .
 ├── README.md               # Project documentation
-├── Gemfile                 # Ruby dependencies for Jekyll
+├── _config.yml             # Jekyll site configuration
+├── index.md                # Site homepage content
+├── _layouts/               # Jekyll layouts
+├── _includes/              # Jekyll includes
+├── public/                 # CSS and other assets
 ├── .gitignore              # Git ignore rules
 ├── data/                   # Data files and datasets
 │   ├── README.md           # Data documentation
@@ -16,34 +20,31 @@ Data brokers buy and aggregate billions of data elements on individuals, selling
 ├── data_utils/             # Data processing utilities (Python)
 │   ├── __init__.py
 │   └── data_cleaner.py     # Data cleaning functions
-├── notebooks/              # Jupyter notebooks for analysis
-│   ├── clearinghouse_analysis.ipynb
-│   ├── info-extraction.ipynb
-│   └── privacy-policy-analysis.ipynb
-└── docs/                   # Contains the Jekyll site for GitHub Pages
-    ├── _config.yml         # Jekyll site configuration
-    ├── index.md            # Site homepage
-    ├── _posts/             # Blog post content
-    ├── project_report_1.md
-    └── project_report_2.md
+└── notebooks/              # Jupyter notebooks for analysis
+    ├── clearinghouse_analysis.ipynb
+    ├── info-extraction.ipynb
+    └── privacy-policy-analysis.ipynb
 ```
 
 ## Website
-This project includes a static website built with Jekyll, hosted on GitHub Pages. The content for the site is located in the `/docs` directory.
+This project includes a static website built with Jekyll, hosted on GitHub Pages. The content for the site is located in the root directory.
+
+The live website can be viewed at: [https://mjayjoh.github.io/data-broker-analysis/](https://mjayjoh.github.io/data-broker-analysis/)
 
 ### How to Run Locally
-To preview the website on your local machine, you will need Ruby and Bundler installed.
+To preview the website on your local machine, you will need Ruby and the `jekyll` and `bundler` gems installed.
 
-1.  **Install Dependencies:**
-    Navigate to the project's root directory and run Bundler to install the gems specified in the `Gemfile`.
+1.  **Install Dependencies (if you have a Gemfile):**
+    If you have a `Gemfile`, navigate to the project's root directory and run Bundler to install the gems.
     ```bash
     bundle install
     ```
+    *Note: This project currently does not use a Gemfile, so this step can be skipped.*
 
 2.  **Serve the Site:**
-    Run the Jekyll server. The `--source` flag tells Jekyll to look for the site content in the `docs` directory.
+    Run the Jekyll server from the root directory.
     ```bash
-    bundle exec jekyll serve --source docs
+    bundle exec jekyll serve
     ```
 
 3.  **View the Site:**
