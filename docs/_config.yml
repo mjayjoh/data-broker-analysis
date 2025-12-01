@@ -1,8 +1,35 @@
+# Markdown
+markdown:         kramdown
+highlighter:      rouge
 
-title: Data about Data Brokers
-description: Unveiling the Data Broker Industry
-theme: jekyll-theme-hyde
-url: "https://mjayjoh.github.io"
-baseurl: "/data-broker-analysis"
+# Permalinks
+permalink:        pretty
 
-markdown: kramdown
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+
+gist:
+  noscript: false
+
+# Setup
+title:            Data about Data Brokers
+tagline:          "Minjae's Personal Blog"
+description:      'Unveiling the Data Broker Industry'
+url:              https://mjayjoh.github.io
+baseurl:          /data-broker-analysis
+remote_theme:     jekyll/jekyll-theme-hyde
+
+
+author:
+  name:           'Minjae Joh'
+  url:            https://github.com/mjayjoh
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/mjayjoh/data-broker-analysis
