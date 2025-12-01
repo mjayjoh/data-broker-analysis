@@ -21,7 +21,6 @@ url:              https://mjayjoh.github.io
 baseurl:          /data-broker-analysis
 remote_theme:     poole/hyde
 
-
 author:
   name:           'Minjae Joh'
   url:            https://github.com/mjayjoh

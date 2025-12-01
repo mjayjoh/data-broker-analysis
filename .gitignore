@@ -102,3 +102,4 @@ data/raw_data/*.csv
 # Processed data (recreatable)
 data/processed/
 notebooks/output.csv
+_site/
