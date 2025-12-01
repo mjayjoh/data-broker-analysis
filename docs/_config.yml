@@ -2,3 +2,7 @@
 title: Data about Data Brokers
 description: Unveiling the Data Broker Industry
 theme: jekyll-theme-hyde
+url: "https://mjayjoh.github.io"
+baseurl: "/data-broker-analysis"
+
+markdown: kramdown
