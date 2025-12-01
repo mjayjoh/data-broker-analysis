@@ -19,7 +19,7 @@ tagline:          "Minjae's Personal Blog"
 description:      'Unveiling the Data Broker Industry'
 url:              https://mjayjoh.github.io
 baseurl:          /data-broker-analysis
-remote_theme:     jekyll/jekyll-theme-hyde
+remote_theme:     poole/hyde
 
 
 author:
