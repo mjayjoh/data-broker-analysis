@@ -12,6 +12,8 @@ This directory contains Jupyter notebooks used for data exploration, analysis, a
 
 ## Usage
 
+It is recommended to run `info-extraction.ipynb` first, as it prepares data used by other notebooks. The other notebooks can then be run independently.
+
 These notebooks are designed to be run in a Jupyter environment with the required dependencies installed (see `requirements.txt` in the project root).
 
 To run the notebooks locally:
