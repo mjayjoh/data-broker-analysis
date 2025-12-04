@@ -33,26 +33,42 @@ There are also several compliance loopholes with the data broker registration ap
 
 Several additional federal frameworks also govern the data broker industry, but often in domain-specific ways. For example, the Fair Credit Reporting Act (FCRA) regulates consumer reporting agencies that provide information used for credit, employment, or insurance decisions. But, many data brokers evade these rules by avoiding classification as reporting agencies, allowing them to influence such decisions without adhering to accuracy or fairness standards. Other rules include the Gramm-Leach-Bliley Act (GLBA) that governs the way financial institutions share customer information, as well as HIPAA (Health Insurance Portability and Accountability Act) and COPPA (Children’s Online Privacy Protection Act). The Federal Trade Commission also has authority to restrain unfair and deceptive trade practices, but there does not exist a comprehensive federal framework governing data brokers (nor a comprehensive federal consumer privacy act). 
 
-| Agency | Practices |
-|---|---|
-| **Acxiom*** | collects and sells extensive data on over <mark>2.5 billion</mark> consumers worldwide, covering demographics, finances, interests, behaviors, purchases, and even geolocation |
-| **LexisNexis** | links over <mark>283 million</mark> U.S. consumer profiles with billions of records on finances, property, vehicles, and phone numbers and offers tools to track people’s locations, connections, and identities, search criminal and public records, and provide real-time updates, with data sourced from both U.S. and international databases |
-| **Nielsen** | collects extensive audience and consumer data across more than <mark>60,000 segments</mark>, tracking demographics, spending, media use, shopping habits, and credit card transactions |
-| **Experian*** | handles over <mark>2 billion records</mark> each month and holds data on about 95% of the U.S. population, linking billions of transactions and personal identifiers into detailed consumer profiles |
-| **Equifax** | collects data on <mark>45% of the nation’s assets</mark>, covering financial habits, spending, credit, and lifestyle behaviors across many categories, links customer data with third-party information for marketing insights, buys payroll and employment data |
-
-| Agency | Practices |
-| :--- | :--- |
-| **Acxiom\*** | collects and sells extensive data on over **2.5 billion** consumers worldwide... |
-| **LexisNexis** | links over **283 million** U.S. consumer profiles with billions of records... |
-| **Nielsen** | collects extensive audience and consumer data across more than **60,000 segments**... |
-| **Experian\*** | handles over **2 billion records** each month and holds data on about 95% of the U.S. population... |
-| **Equifax** | collects data on **45% of the nation’s assets**, covering financial habits... |
-
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <strong>A Glimpse into the Data Broker Industry</strong>
-</div>
-<div align="right"><sub>*was implicated in the Cambridge Analytica scandal</sub></div>
+<table>
+  <thead>
+    <tr>
+      <th>Agency</th>
+      <th>Practices</th>
+    </tr>
+  </thead>
+  <caption style="caption-side:bottom; text-align: left; padding-top: 10px;">
+      <b>A Glimpse into the Data Broker Industry</b>
+      <div style="float: right; font-size: smaller;">
+          <sub>*was implicated in the Cambridge Analytica scandal</sub>
+      </div>
+  </caption>
+  <tbody>
+    <tr>
+      <td><b>Acxiom*</b></td>
+      <td>collects and sells extensive data on over <mark>2.5 billion</mark> consumers worldwide, covering demographics, finances, interests, behaviors, purchases, and even geolocation</td>
+    </tr>
+    <tr>
+      <td><b>LexisNexis</b></td>
+      <td>links over <mark>283 million</mark> U.S. consumer profiles with billions of records on finances, property, vehicles, and phone numbers and offers tools to track people’s locations, connections, and identities, search criminal and public records, and provide real-time updates, with data sourced from both U.S. and international databases</td>
+    </tr>
+    <tr>
+      <td><b>Nielsen</b></td>
+      <td>collects extensive audience and consumer data across more than <mark>60,000 segments</mark>, tracking demographics, spending, media use, shopping habits, and credit card transactions</td>
+    </tr>
+    <tr>
+      <td><b>Experian*</b></td>
+      <td>handles over <mark>2 billion records</mark> each month and holds data on about 95% of the U.S. population, linking billions of transactions and personal identifiers into detailed consumer profiles</td>
+    </tr>
+    <tr>
+      <td><b>Equifax</b></td>
+      <td>collects data on <mark>45% of the nation’s assets</mark>, covering financial habits, spending, credit, and lifestyle behaviors across many categories, links customer data with third-party information for marketing insights, buys payroll and employment data</td>
+    </tr>
+  </tbody>
+</table>
 
 ## What we did
 We decided to analyze the interactions between several entities, conducting our analysis through three major entities in the data broker ecosystem: data broker companies, legislatures, and consumers themselves. We conducted an analysis of the three different entities who shape the ecosystem: data brokers, legislatures, and consumers.
