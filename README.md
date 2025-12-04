@@ -7,6 +7,7 @@ Data brokers buy and aggregate billions of data elements on individuals, selling
 ```
 .
 ├── README.md               # Project documentation
+├── requirements.txt        # Python dependencies
 ├── _config.yml             # Jekyll site configuration
 ├── 404.html                # Custom 404 page
 ├── atom.xml                # Atom feed

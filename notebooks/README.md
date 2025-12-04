@@ -7,7 +7,7 @@ This directory contains Jupyter notebooks used for data exploration, analysis, a
 - `clearinghouse_analysis.ipynb` - Analysis of data broker clearinghouse mechanisms
 - `info-extraction.ipynb` - Privacy policy data extraction and processing workflows  
 - `privacy-policy-analysis.ipynb` - Privacy policy analysis and comparison
-- `output.csv` - Generated output from notebook analyses
+- `survey-analysis.ipynb` - Analysis of survey data related to consumer awareness of data brokers
 - `imgs` folder - Generated images from notebook analyses
 
 ## Usage
