@@ -40,6 +40,7 @@ Several additional federal frameworks also govern the data broker industry, but 
 | **Nielsen** | collects extensive audience and consumer data across more than <mark>60,000 segments</mark>, tracking demographics, spending, media use, shopping habits, and credit card transactions |
 | **Experian*** | handles over <mark>2 billion records</mark> each month and holds data on about 95% of the U.S. population, linking billions of transactions and personal identifiers into detailed consumer profiles |
 | **Equifax** | collects data on <mark>45% of the nation’s assets</mark>, covering financial habits, spending, credit, and lifestyle behaviors across many categories, links customer data with third-party information for marketing insights, buys payroll and employment data |
+
 : A Glimpse into the Data Broker Industry
 
 <div align="right"><sub>*was implicated in the Cambridge Analytica scandal</sub></div>
