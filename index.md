@@ -34,11 +34,8 @@ By now, you might feel uneasy, but perhaps you’re wondering: what is the real 
       <th>Practices</th>
     </tr>
   </thead>
-  <caption style="caption-side:bottom; text-align: center; padding-top: 10px;">
-      <b>A Glimpse into the Data Broker Industry</b>
-      <div style="float: right; font-size: smaller;">
+  <caption style="caption-side:bottom; text-align: right; padding-top: 5px;">
           <sub>*was implicated in the Cambridge Analytica scandal</sub>
-      </div>
   </caption>
   <tbody>
     <tr>
@@ -63,6 +60,7 @@ By now, you might feel uneasy, but perhaps you’re wondering: what is the real 
     </tr>
   </tbody>
 </table>
+<div style="text-align:center"><b>A Glimpse into the Data Broker Industry</b></div>
 
 
 ## What we did
