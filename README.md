@@ -18,7 +18,6 @@ Data brokers buy and aggregate billions of data elements on individuals, selling
 ├── _layouts/               # Jekyll layouts
 ├── _plugins/               # Jekyll plugins
 ├── data/                   # Data files and datasets
-│   ├── README.md           # Data documentation
 │   ├── cleaned_data/       # Processed datasets
 │   └── raw_data/           # Original datasets
 ├── data_utils/             # Data processing utilities (Python)
@@ -28,9 +27,30 @@ Data brokers buy and aggregate billions of data elements on individuals, selling
 ```
 
 ## Website
-This project includes a static website built with Jekyll, hosted on GitHub Pages. It utilizes the Hyde theme. The content for the site is located in the root directory.
+This project includes a static website built with Jekyll, hosted on GitHub Pages. The content for the site is located in the root directory.
 
 The live website can be viewed at: [https://mjayjoh.github.io/data-broker-analysis/](https://mjayjoh.github.io/data-broker-analysis/)
+
+## Replicating the Analysis
+The analysis and visualizations in this project can be replicated by running the Jupyter notebooks located in the `notebooks/` directory. These notebooks contain the code for data exploration, analysis, and prototyping.
+
+### How to Run the Notebooks
+To run the notebooks on your local machine, you will need Python and the dependencies listed in `requirements.txt`.
+
+1.  **Install Dependencies:**
+    Navigate to the project's root directory and run pip to install the dependencies.
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2.  **Start Jupyter:**
+    Run the Jupyter Notebook server from the project's root directory.
+    ```bash
+    jupyter notebook
+    ```
+
+3.  **View the Notebooks:**
+    Open your web browser and navigate to the `notebooks/` directory to run the desired notebook.
 
 ### How to Run Locally
 To preview the website on your local machine, you will need Ruby and the `jekyll` and `bundler` gems installed.
