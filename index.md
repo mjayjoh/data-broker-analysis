@@ -42,7 +42,7 @@ Several additional federal frameworks also govern the data broker industry, but 
 | **Equifax** | collects data on <mark>45% of the nation’s assets</mark>, covering financial habits, spending, credit, and lifestyle behaviors across many categories, links customer data with third-party information for marketing insights, buys payroll and employment data |
 : A Glimpse into the Data Broker Industry
 
-*was implicated in the Cambridge Analytica scandal
+<div align="right"><sub>*was implicated in the Cambridge Analytica scandal</sub></div>
 
 ## What we did
 We decided to analyze the interactions between several entities, conducting our analysis through three major entities in the data broker ecosystem: data broker companies, legislatures, and consumers themselves. We conducted an analysis of the three different entities who shape the ecosystem: data brokers, legislatures, and consumers.
