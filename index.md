@@ -33,13 +33,13 @@ There are also several compliance loopholes with the data broker registration ap
 
 Several additional federal frameworks also govern the data broker industry, but often in domain-specific ways. For example, the Fair Credit Reporting Act (FCRA) regulates consumer reporting agencies that provide information used for credit, employment, or insurance decisions. But, many data brokers evade these rules by avoiding classification as reporting agencies, allowing them to influence such decisions without adhering to accuracy or fairness standards. Other rules include the Gramm-Leach-Bliley Act (GLBA) that governs the way financial institutions share customer information, as well as HIPAA (Health Insurance Portability and Accountability Act) and COPPA (Children’s Online Privacy Protection Act). The Federal Trade Commission also has authority to restrain unfair and deceptive trade practices, but there does not exist a comprehensive federal framework governing data brokers (nor a comprehensive federal consumer privacy act). 
 
-## Top Data Broker Agencies Examples
-### Practices
-- **Acxiom***: collects and sells extensive data on over 2.5 billion consumers worldwide, covering demographics, finances, interests, behaviors, purchases, and even geolocation
-- **LexisNexis**: links over 283 million U.S. consumer profiles with billions of records on finances, property, vehicles, and phone numbers and offers tools to track people’s locations, connections, and identities, search criminal and public records, and provide real-time updates, with data sourced from both U.S. and international databases
-- **Nielsen**: collects extensive audience and consumer data across more than 60,000 segments, tracking demographics, spending, media use, shopping habits, and credit card transactions
-- **Experian***: handles over 2 billion records each month and holds data on about 95% of the U.S. population, linking billions of transactions and personal identifiers into detailed consumer profiles
-- **Equifax**: collects data on 45% of the nation’s assets, covering financial habits, spending, credit, and lifestyle behaviors across many categories, links customer data with third-party information for marketing insights, buys payroll and employment data
+| Agency | Practices |
+|---|---|
+| **Acxiom*** | collects and sells extensive data on over 2.5 billion consumers worldwide, covering demographics, finances, interests, behaviors, purchases, and even geolocation |
+| **LexisNexis** | links over 283 million U.S. consumer profiles with billions of records on finances, property, vehicles, and phone numbers and offers tools to track people’s locations, connections, and identities, search criminal and public records, and provide real-time updates, with data sourced from both U.S. and international databases |
+| **Nielsen** | collects extensive audience and consumer data across more than 60,000 segments, tracking demographics, spending, media use, shopping habits, and credit card transactions |
+| **Experian*** | handles over 2 billion records each month and holds data on about 95% of the U.S. population, linking billions of transactions and personal identifiers into detailed consumer profiles |
+| **Equifax** | collects data on 45% of the nation’s assets, covering financial habits, spending, credit, and lifestyle behaviors across many categories, links customer data with third-party information for marketing insights, buys payroll and employment data |
 
 ## A Glimpse into the Data Broker Industry
 *was implicated in the Cambridge Analytica scandal
