@@ -36,12 +36,12 @@ Several additional federal frameworks also govern the data broker industry, but 
 | Agency | Practices |
 |---|---|
 | **Acxiom*** | collects and sells extensive data on over <mark>2.5 billion</mark> consumers worldwide, covering demographics, finances, interests, behaviors, purchases, and even geolocation |
-| **LexisNexis** | links over 283 million U.S. consumer profiles with billions of records on finances, property, vehicles, and phone numbers and offers tools to track people’s locations, connections, and identities, search criminal and public records, and provide real-time updates, with data sourced from both U.S. and international databases |
-| **Nielsen** | collects extensive audience and consumer data across more than 60,000 segments, tracking demographics, spending, media use, shopping habits, and credit card transactions |
-| **Experian*** | handles over 2 billion records each month and holds data on about 95% of the U.S. population, linking billions of transactions and personal identifiers into detailed consumer profiles |
-| **Equifax** | collects data on 45% of the nation’s assets, covering financial habits, spending, credit, and lifestyle behaviors across many categories, links customer data with third-party information for marketing insights, buys payroll and employment data |
+| **LexisNexis** | links over <mark>283 million</mark> U.S. consumer profiles with billions of records on finances, property, vehicles, and phone numbers and offers tools to track people’s locations, connections, and identities, search criminal and public records, and provide real-time updates, with data sourced from both U.S. and international databases |
+| **Nielsen** | collects extensive audience and consumer data across more than <mark>60,000 segments</mark>, tracking demographics, spending, media use, shopping habits, and credit card transactions |
+| **Experian*** | handles over <mark>2 billion records</mark> each month and holds data on about 95% of the U.S. population, linking billions of transactions and personal identifiers into detailed consumer profiles |
+| **Equifax** | collects data on <mark>45% of the nation’s assets</mark>, covering financial habits, spending, credit, and lifestyle behaviors across many categories, links customer data with third-party information for marketing insights, buys payroll and employment data |
+: A Glimpse into the Data Broker Industry
 
-## A Glimpse into the Data Broker Industry
 *was implicated in the Cambridge Analytica scandal
 
 ## What we did
