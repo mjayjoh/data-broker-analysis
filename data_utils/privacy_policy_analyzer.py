@@ -8,7 +8,7 @@ visualizations to understand data broker practices.
 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+import altair as alt
 from pathlib import Path
 
 
@@ -68,44 +68,80 @@ def parse_llm_responses(data, question_col, category_names, name_col="Name"):
     return result_df
 
 
-def create_policy_analysis_chart(data, category_columns, title, xlabel, legend_labels=None):
+def create_policy_analysis_chart(data, category_columns, title, xlabel, legend_labels=None, legend_title='Response Type', category_labels_map=None):
     """
-    Create a standardized bar chart for privacy policy analysis.
+    Create a standardized bar chart for privacy policy analysis using Altair.
     
     Args:
-        data (pd.DataFrame): Dataframe containing the data
-        category_columns (list): List of columns to analyze
-        title (str): Chart title
-        xlabel (str): X-axis label
-        legend_labels (list, optional): Custom legend labels
+        data (pd.DataFrame): Dataframe containing the data to analyze.
+        category_columns (list): List of columns to include in the analysis.
+        title (str): Chart title.
+        xlabel (str): X-axis label.
+        legend_labels (list or dict, optional): Mapping from response values to labels.
+        legend_title (str, optional): Title for the legend.
+        category_labels_map (dict, optional): Dictionary to map snake_case category names to user-friendly labels.
         
     Returns:
-        matplotlib.figure.Figure: Created figure
+        altair.Chart: Generated Altair chart object.
     """
-    # Calculate value counts for each response type (0, 1, 2)
-    value_sums = pd.DataFrame({val: (data[category_columns] == val).sum() for val in [0, 1, 2]})
+    # Melt the dataframe to long format
+    long_df = data[category_columns].melt(var_name='category', value_name='response')
     
-    # Create the plot
-    fig, ax = plt.subplots(figsize=(10, 6))
-    value_sums.plot(kind='bar', ax=ax)
+    # Apply category label mapping if provided
+    if category_labels_map:
+        long_df['display_category'] = long_df['category'].map(category_labels_map)
+        x_field = 'display_category:N'
+        tooltip_category_field = alt.Tooltip('display_category:N', title='Category')
+    else:
+        default_category_labels_map = {
+            "marketing": "Marketing",
+            "personalized_ads": "Personalized Ads",
+            "employment": "Employment",
+            "consumer_finance": "Consumer Finance",
+            "law_no_subpoena": "Law Enforcement (No Subpoena)",
+            "gov": "Government",
+            "corporations": "Corporations",
+            "education_research": "Education & Research",
+            "access": "Access",
+            "correct": "Correct",
+            "delete": "Delete",
+            "no_discrimination": "No Discrimination",
+            "no_targeted_ads": "No Targeted Ads",
+            "opt_out_data": "Opt-Out Sharing & Collection"
+        }
+        long_df['display_category'] = long_df['category'].map(default_category_labels_map).fillna(
+            long_df['category'].str.replace('_', ' ').str.title()
+        )
+        x_field = 'display_category:N'
+        tooltip_category_field = alt.Tooltip('display_category:N', title='Category')
+
+    sort_order = None
+    # Map response values to labels
+    if legend_labels:
+        if isinstance(legend_labels, list):
+            label_map = {i: label for i, label in enumerate(legend_labels)}
+            sort_order = legend_labels
+        elif isinstance(legend_labels, dict):
+            label_map = legend_labels
+            sort_order = [label_map[k] for k in sorted(label_map.keys())]
+        else:
+            raise TypeError("legend_labels must be a list or dictionary.")
+        
+        long_df['response_label'] = long_df['response'].map(label_map)
+    else:
+        long_df['response_label'] = long_df['response']
+
+    # Create the chart
+    chart = alt.Chart(long_df).mark_bar().encode(
+        y=alt.Y(x_field, title=xlabel, axis=alt.Axis(labelAngle=0), sort=category_columns),
+        x=alt.X('count()', stack='normalize', axis=alt.Axis(format='%', title='Percentage')),
+        color=alt.Color('response_label:N', title=legend_title, sort=sort_order),
+        tooltip=[tooltip_category_field, 'response_label:N', alt.Tooltip('count()', title='Count')]
+    ).properties(
+        title=title
+    )
     
-    # Customize the plot
-    ax.set_title(title, fontsize=14, fontweight='bold', pad=20)
-    ax.set_xlabel(xlabel, fontsize=12)
-    ax.set_ylabel('Count', fontsize=12)
-    ax.tick_params(axis='x', rotation=45, labelsize=10)
-    ax.tick_params(axis='y', labelsize=10)
-    
-    # Set legend
-    if legend_labels is None:
-        legend_labels = ['0 = Not Allowed/No Guarantee', '1 = Allowed/Guaranteed', '2 = Not Mentioned']
-    
-    ax.legend(title='Response Type', labels=legend_labels, loc='upper right')
-    
-    # Improve layout
-    plt.tight_layout()
-    
-    return fig
+    return chart
 
 
 def analyze_data_use_practices(llm_data):
@@ -245,7 +281,8 @@ def generate_analysis_report(data_use_stats, entities_stats, controls_stats):
             report.append(f"{category.replace('_', ' ').title()}:")
             report.append(f"  - Explicitly guaranteed: {stats['guaranteed']} ({guaranteed_pct:.1f}%)")
             report.append(f"  - No guarantee: {stats['no_guarantee']}")
-            report.append(f"  - Not mentioned: {stats['not_mentioned']}")
+            if 'not_mentioned' in stats and stats['not_mentioned'] > 0:
+                report.append(f"  - Not mentioned: {stats['not_mentioned']}")
     
     report.append("\n" + "=" * 60)
     
