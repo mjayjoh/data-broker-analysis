@@ -14,63 +14,20 @@ Data brokers buy and aggregate billions of data elements on individuals, selling
 ├── index.md                # Site homepage content
 ├── LICENSE.md              # Project license
 ├── _includes/              # Jekyll includes
-│   ├── head.html
-│   └── sidebar.html
 ├── _layouts/               # Jekyll layouts
-│   ├── default.html
-│   ├── page.html
-│   └── post.html
 ├── _plugins/               # Jekyll plugins
-│   └── timeout_error_patch.rb
-├── cleaned_data/           # Top-level directory for cleaned data (redundant, consider merging with data/cleaned_data)
-│   ├── privacy-policies-scraping.csv
-│   └── uq-data-brokers.csv
 ├── data/                   # Data files and datasets
 │   ├── README.md           # Data documentation
 │   ├── cleaned_data/       # Processed datasets
-│   │   ├── uq-data-brokers.csv
-│   │   └── privacy_policies/
-│   │       ├── privacy_policies_cleaned.csv
-│   │       └── privacy_policies_unique_shuffled.csv
-│   ├── processed_data/     # Further processed data
-│   │   └── README.md
 │   └── raw_data/           # Original datasets
-│       ├── privacy_policies/
-│       │   └── privacy-policy-scraping-final.csv
-│       └── survey/
-│           ├── survey_results.csv
-│           └── Survey-Questions.pdf
 ├── data_utils/             # Data processing utilities (Python)
-│   ├── __init__.py
-│   ├── data_cleaner.py     # Data cleaning functions
-│   ├── privacy_policy_analyzer.py
-│   └── privacy_policy_extractor.py
 ├── notebooks/              # Jupyter notebooks for analysis and visualization
-│   ├── clearinghouse_analysis.ipynb
-│   ├── info-extraction.ipynb
-│   ├── privacy-policy-analysis.ipynb
-│   ├── README.md
-│   ├── survey_analysis.ipynb
 │   └── imgs/               # Images used in notebooks
-│       ├── controls-privacy-policies.png
-│       ├── data-collection-practices.png
-│       ├── data-sharing-privacy-policies.png
-│       ├── permitted-data-use-cases-in-privacy-policies-of-data-brokers.png
-│       ├── permitted-entity-data-sharing-in-privacy-policies-of-data-brokers.png
-│       ├── transparency-gaps.png
-│       ├── use-cases-privacy-policies.png
-│       └── user-rights-and-controls-in-privacy-policies-of-data-brokers.png
 └── public/                 # Static assets for the Jekyll site
-    ├── apple-touch-icon-144-precomposed.png
-    ├── favicon.ico
-    └── css/
-        ├── hyde.css
-        ├── poole.css
-        └── syntax.css
 ```
 
 ## Website
-This project includes a static website built with Jekyll, hosted on GitHub Pages. The content for the site is located in the root directory.
+This project includes a static website built with Jekyll, hosted on GitHub Pages. It utilizes the Hyde theme. The content for the site is located in the root directory.
 
 The live website can be viewed at: [https://mjayjoh.github.io/data-broker-analysis/](https://mjayjoh.github.io/data-broker-analysis/)
 
