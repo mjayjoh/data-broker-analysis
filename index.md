@@ -36,6 +36,9 @@ By now, you might feel uneasy, but perhaps you’re wondering: what is the real 
   </thead>
   <caption style="caption-side:bottom; text-align: center; padding-top: 10px;">
       <b>A Glimpse into the Data Broker Industry</b>
+      <div style="float: right; font-size: smaller;">
+          <sub>*was implicated in the Cambridge Analytica scandal</sub>
+      </div>
   </caption>
   <tbody>
     <tr>
@@ -60,9 +63,7 @@ By now, you might feel uneasy, but perhaps you’re wondering: what is the real 
     </tr>
   </tbody>
 </table>
-<div style="float: right; font-size: smaller;">
-          <sub>*was implicated in the Cambridge Analytica scandal</sub>
-      </div>
+
 
 ## What we did
 We decided to analyze the interactions between several entities, conducting our analysis through three major entities in the data broker ecosystem: data broker companies, legislatures, and consumers themselves. We conducted an analysis of the three different entities who shape the ecosystem: data brokers, legislatures, and consumers.
