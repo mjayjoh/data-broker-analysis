@@ -94,12 +94,6 @@ dmypy.json
 # Altair visualization cache files
 altair-data-*.json
 
-# Large data files (allow specific cleaned data)
-*.xlsx
-data/raw_data/*.csv
-!data/cleaned_data/*.csv
-
 # Processed data (recreatable)
-data/processed/
 notebooks/output.csv
 _site/
