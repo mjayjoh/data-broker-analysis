@@ -252,6 +252,112 @@ In most other states, data brokers are governed indirectly by broader consumer p
   </tbody>
 </table>
 
+<table>
+  <thead>
+    <tr style="text-align: center;">
+      <th width="15%">Category</th>
+      <th width="28%">Data Brokers</th>
+      <th width="28%">Consumer Preference</th>
+      <th width="28%">State Legislators</th>
+    </tr>
+  </thead>
+  <caption style="caption-side:bottom; text-align: center; padding-top: 10px;">
+    <small><i><b>Table 3:</b> Summarized Findings</i></small>
+  </caption>
+  <tbody>
+    <tr>
+      <td style="text-align: center;"><b>Data Type</b></td>
+      <td>
+        <ul>
+            <li><b>91.7%:</b> Commercial data</li>
+            <li><b>82.4%:</b> Employment data</li>
+            <li><b>70.5%:</b> Address data</li>
+            <li><b>66.7%:</b> Social network data</li>
+            <li><b>~21%:</b> Minors’ data</li>
+            <li><b>&lt;7%:</b> Gov ID &amp; Biometrics</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+            <li><b>Most Accepted:</b> Commercial (53%) &amp; Employment (35%).</li>
+            <li><b>Least Accepted:</b> All others (&lt;25%).</li>
+            <li><b>Unsure:</b> 27.4% of users.</li>
+        </ul>
+      </td>
+      <td>
+        Most laws <b>narrowly define</b> personal data (addresses, biometrics, Gov IDs), often <b>excluding</b> transaction and employment records.
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center;"><b>Data Use</b></td>
+      <td>
+        <ul>
+            <li><b>95.5%:</b> Marketing</li>
+            <li><b>86%:</b> Personalized Ads</li>
+            <li>Other uses (Law enforcement, finance) frequently not reported.</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+            <li><b>63%:</b> Approve Personalized Ads</li>
+            <li><b>44%:</b> Approve Marketing</li>
+            <li><b>24%:</b> Disapprove of <i>all</i> uses.</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+            <li><b>No states</b> prohibit these use cases.</li>
+            <li>Most provide opt-out rights.</li>
+            <li>Only <b>4 states</b> (CA, VT, OR, TX) maintain registries.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center;"><b>Entity Sharing</b></td>
+      <td>
+        Overwhelmingly allow sharing to <b>Corporations</b>. Sharing to Gov/Education is less common but allowed if reported.
+      </td>
+      <td>
+        <ul>
+            <li><b>85%:</b> Comfortable with Education/Research.</li>
+            <li><b>35%:</b> Comfortable with Gov.</li>
+            <li><b>24%:</b> Comfortable with Corps.</li>
+        </ul>
+      </td>
+      <td>
+        <b>No states</b> prohibit sharing with Corporations, Government, or Research institutions.
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center;"><b>Consumer Rights</b></td>
+      <td>
+        <ul>
+            <li><b>96%:</b> Opt-out allowed</li>
+            <li><b>88-89%:</b> Access &amp; Delete</li>
+            <li><b>81%:</b> Correct data</li>
+            <li><b>44%:</b> Ad restrictions</li>
+        </ul>
+      </td>
+      <td>
+        <b>Top Desires:</b>
+        <ol>
+            <li>Opt-out of collection (Top Choice)</li>
+            <li>Anti-discrimination</li>
+            <li>Right to Delete</li>
+        </ol>
+      </td>
+      <td>
+        <b>Of 19 Comprehensive Laws:</b>
+        <ul>
+            <li><b>100%:</b> Right to Access</li>
+            <li><b>94%:</b> Right to Correct/Delete</li>
+            <li><b>47%:</b> Ban discrimination</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 We mapped our most notable findings in Table 3, stratifying by category (data type, data use, entity sharing, consumer rights) and actors (data brokers, consumer preferences, state legislators). Survey results indicate general distrust toward data brokers; they tend to overestimate the amount of sensitive data that brokers collect, while indicating significant disapproval of this collection. One key difference between data broker practices and consumer preferences is the decision to share personal data with corporations. Only 24.2% of respondents approved data sharing to corporations; 99% of data brokers we analyzed allow sharing to corporations.
 
 The two data types that consumers find most permissible for data brokers to collect do in fact align with the two most common data types that data brokers actually collect (commercial transactions and employment data), but the gap between these two sets of percentages are 38.5% and 46.9%, respectively. A similar pattern is true for use cases of personal data: consumers are most likely to approve of personalized advertising and marketing, which are the two most common explicitly permitted use cases of data. For example, marketing was the most common explicitly permitted use case of data by data brokers, at 95.5%, and the second most “approved” use case by participants. However, less than half (43.5%) of that percentage of participants approved of the marketing use case. Figures 11 and 12 display these disparities.
