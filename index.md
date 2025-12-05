@@ -60,7 +60,7 @@ By now, you might feel uneasy, but perhaps you’re wondering: what is the real 
     </tr>
   </tbody>
 </table>
-<div style="text-align:center"><b>Table 1: A Glimpse into the Data Broker Industry</b></div>
+<div style="text-align:center">Table 1: A Glimpse into the Data Broker Industry</div>
 
 
 ## What we did
