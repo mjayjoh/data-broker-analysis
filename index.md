@@ -60,8 +60,9 @@ By now, you might feel uneasy, but perhaps you’re wondering: what is the real 
     </tr>
   </tbody>
 </table>
-<div style="text-align:center">Table 1: A Glimpse into the Data Broker Industry</div>
-
+<p align="center">
+  <small><i><b>Table 1:</b> A Glimpse into the Data Broker Industry</i></small>
+</p>
 
 ## What we did
 To shed light on the industry, we analyzed the three key players in the data broker ecosystem: data brokers, consumers, and legislatures. We created a standardized set of questions to compare the three entities across four major categories: data type collected, data use, data sharing, and user controls.
@@ -78,7 +79,7 @@ We used a data broker dataset compiled by Privacy Rights Clearinghouse, a nonpro
     </tr>
   </thead>
   <caption style="caption-side:bottom; text-align: center; padding-top: 10px;">
-          Table 2: Sources of Data
+          <small><i><b>Table 2:</b> Sources of Data</i></small>
   </caption>
   <tbody>
     <tr style="text-align: center;">
@@ -112,9 +113,15 @@ We used a data broker dataset compiled by Privacy Rights Clearinghouse, a nonpro
 ### The Practices of Data Brokers
 As shown in the figures below, the majority of data brokers that do report the type of data they collect gather address data, commercial transactions data, employment data, and social network data. Among the other data types, approximately 3.2% of our data brokers collect biometric data, 21.3% of data brokers collect minors’ data, 1.6% of data brokers collect reproductive health data, and 6.5% of data brokers collect government ID data, such as Social Security Numbers. However, with the exception of minors’ data, where approximately 45% of data brokers explicitly report whether they collect or do not collect minors’ data, data brokers overwhelmingly do not even disclose whether they collect the other forms of sensitive data, such as social network data, employment data, commercial transactions data, biometric data, government ID data, addresses, and reproductive health data. This transparency gap highlights the shadowy practices of data brokers: joint human (Privacy Rights Clearinghouse, Electronic Frontier Foundation, and the Harvard Law School Cyberlaw Clinic) and algorithmic analysis of data broker registrations across state registry databases were unable to determine whether data brokers collected some forms of sensitive data.
 ![Permitted Data Types Collected By Data Brokers](/notebooks/imgs/data_type_chart.svg)
-Figure 1: Permitted Data Types Collected, Per Data Broker Privacy Policies
+<p align="center">
+  <small><i><b>Figure 1:</b> Permitted Data Types Collected, Per Data Broker Privacy Policies</i></small>
+</p>
+
 ![Transparency Gaps in Data Types Collected by Data Brokers](/notebooks/imgs/data-collection-practices.png)
-Figure 2: Transparency Gaps in Data Types Collected by Data Brokers
+<p align="center">
+  <small><i><b>Figure 2:</b> Transparency Gaps in Data Types Collected by Data Brokers</i></small>
+</p>
+
 
 Furthermore, in terms of what personal data collected by data brokers is allowed to be used for, our LLM-parsing analysis demonstrates that the majority of data brokers explicitly allow personal data to be used for marketing (95.5%) and personalized advertising (86%). Approximately 60 to 70 percent of data brokers do not mention data use in the contexts of employment, consumer finance, and law enforcement requests (without a subpoena). Among the privacy policies that do mention these use cases, 59% allow data to be used in employment decisions. Figure 3 shows these trends below.
 
@@ -126,39 +133,53 @@ Furthermore, in terms of what personal data collected by data brokers is allowed
 Among the sample of 200 privacy policies we analyzed, almost all (99%) of the data brokers allow data sharing with corporations, as shown in Figure 4. The majority of data broker privacy policies do not explicitly report whether data sharing is or is not allowed with the government or educational/research institutions. Of those that do report this data, 96.6% allow data sharing with the government and 95.2% permit sharing with educational/research institutions.
 
 ![Permitted Data Uses By Data Brokers](/notebooks/imgs/permitted-entity-data-sharing-in-privacy-policies-of-data-brokers.png)
-Figure 4: Permitted Entities To Share Data With, Per Data Broker Privacy Policies
+<p align="center">
+  <small><i><b>Figure 4:</b> Permitted Entities To Share Data With, Per Data Broker Privacy Policies</i></small>
+</p>
 
 The vast majority of data brokers explicitly guarantee the right to access, correct, and delete data, as well as opt out of collection or sharing, as displayed in Figure 5. Approximately 63.5% of data brokers include non-discrimination statements around data use in their privacy policies, and 96% include provisions that allow users to opt out of data sharing and collection.
 
 ![User Rights and Controls in Data Broker Privacy Policies](/notebooks/imgs/user-rights-and-controls-in-privacy-policies-of-data-brokers.png)
-Figure 5: User Rights and Controls in Data Broker Privacy Policies
+<p align="center">
+  <small><i><b>Figure 5:</b> User Rights and Controls in Data Broker Privacy Policies</i></small>
+</p>
 
 
 ### What consumers want
 We surveyed respondents about their familiarity and understanding of data broker practices, which is displayed in Figure 6. Among the 62 survey respondents, 69.4% indicated a low or nonexistent understanding of data brokers: either “I’ve never heard of data brokers” (the most common response) or “I’ve heard of them but don’t know what they do.” The majority of respondents believed that data brokers collect biometric (62.9%), commercial (91.9%), employment (83.9%), location (88.7%), network data (91.9%), and reproductive health data (54.8%). Only 37% of respondents believed that data brokers collect minors’ data and 40% believed they collect government ID data. 
 
 ![Data Types That Respondents Believe Data Brokers Collect](/notebooks/imgs/survey_type_collected.svg)
-Figure 6: Data Types That Respondents Believe Data Brokers Collect
+<p align="center">
+  <small><i><b>Figure 6:</b> Data Types That Respondents Believe Data Brokers Collect</i></small>
+</p>
 
 The results of Figures 6 and 7 demonstrate a clear mismatch between respondents’ perceptions of current practices and their preferences. While they greatly overestimated the frequency at which data brokers collect data across different data types, with the exception of accuracy for commercial and employment data, responses showed that they did not want data brokers to collect these forms of data. To survey respondents, the most “permissible” data type to collect was commercial transactions data (53.2%) and then employment data (35.5%). Less than a quarter of respondents felt comfortable with data brokers collecting their biometric, location, minors, reproductive health, and government identification data, at approximately 3.2% for minors and 1.6% for government identification data. 
 
 ![Data Types That Respondents Are Comfortable with Data Brokers Collecting](/notebooks/imgs/survey_type_comfort.svg)
-Figure 7: Data Types That Respondents Are Comfortable with Data Brokers Collecting
+<p align="center">
+  <small><i><b>Figure 7:</b> Data Types That Respondents Are Comfortable with Data Brokers Collecting</i></small>
+</p>
 
 In terms of purposes their personal data is used for, the most “approved” category was personalized advertising (62.9%), and then marketing (43.6%) and employment (25.8%). Results indicated general disapproval around their personal data being used across purposes—24.2% responded that they were uncomfortable with all the options. These results are shown in Figure 8.
 
 ![Use Cases that Respondents Are Comfortable With](/notebooks/imgs/survey_purposes_comfort.svg)
-Figure 8: Use Cases that Respondents Are Comfortable With
+<p align="center">
+  <small><i><b>Figure 8:</b> Use Cases that Respondents Are Comfortable With</i></small>
+</p>
 
 Respondents also indicated extreme disapproval with their data shared with corporations, which differed greatly from research and educational institutions: 85.5% of respondents felt comfortable with their data being shared to educational and research institutions, and then government agencies at 35.5%, and corporations last at 24.2%. Notably, 11.29% did not approve of sharing to any of these three entities. These results are shown in Figure 9.
 
 ![Entities That Respondents Are Comfortable With Their Data Shared To](/notebooks/imgs/survey_entities.svg)
-Figure 9: Entities That Respondents Are Comfortable With Their Data Shared To
+<p align="center">
+  <small><i><b>Figure 9:</b> Entities That Respondents Are Comfortable With Their Data Shared To</i></small>
+</p>
 
 Our survey also asked respondents about provisions and safeguards they would like to see in privacy policies and laws. The most frequently selected provision was the “Option to opt out of data collection or sharing” at 93.6%, and then protections against discrimination (83.9%) and the right to access personal data (77.4%). That said, all the listed provisions were selected at at least 69% frequency. This data is displayed in Figure 10.
 
 ![Provisions In Privacy Policies and Laws Respondents Desire](/notebooks/imgs/survey_user_controls.svg)
-Figure 10: Provisions In Privacy Policies and Laws Respondents Desire
+<p align="center">
+  <small><i><b>Figure 10:</b> Provisions In Privacy Policies and Laws Respondents Desire</i></small>
+</p>
 
 Lastly, we were curious about the attitudes of Californian residents toward the DELETE Act, one of the most forward-thinking privacy statutes governing the data broker industry. Of the 12 Californian respondents surveyed, a quarter were aware of the DELETE Act prior to the survey. After providing a description of the Act’s tools, a quarter stated they intend to use the DELETE Act’s mechanisms once they become active, and two-thirds indicated that they might use them.
 
@@ -181,7 +202,7 @@ In most other states, data brokers are governed indirectly by broader consumer p
     </tr>
   </thead>
   <caption style="caption-side:bottom; text-align: center; padding-top: 10px;">
-          Table 3: Summarized Table of Findings
+          <small><i><b>Table 3:</b> Summarized Table of Findings</i></small>
   </caption>
   <tbody>
     <tr>
