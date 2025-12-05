@@ -139,7 +139,7 @@ Furthermore, in terms of what personal data collected by data brokers is allowed
 Among the sample of 200 privacy policies we analyzed, almost all (99%) of the data brokers allow data sharing with corporations, as shown in Figure 4. The majority of data broker privacy policies do not explicitly report whether data sharing is or is not allowed with the government or educational/research institutions. Of those that do report this data, 96.6% allow data sharing with the government and 95.2% permit sharing with educational/research institutions.
 
 <p align="center">
-  <img src="notebooks/imgs/Permitted Entities To Share Data With, Per Data Broker Privacy Policies.svg" alt="Permitted Entities To Share Data With, Per Data Broker Privacy Policies">
+  <img src="notebooks/imgs/Permitted Entity Data Sharing in Privacy Policies of Data Brokers.svg" alt="Permitted Entities To Share Data With, Per Data Broker Privacy Policies">
 </p>
 <p align="center">
   <small><i><b>Figure 4:</b> Permitted Entities To Share Data With, Per Data Broker Privacy Policies</i></small>
@@ -211,7 +211,7 @@ Nineteen states lack comprehensive consumer privacy laws, but only five (Califor
 In most other states, data brokers are governed indirectly by broader consumer privacy statutes. These laws do not explicitly reference data brokers but instead define “controllers” and “processors,” categories that encompass data broker activities. A controller is typically defined as an entity that determines the purposes and means of processing personal data, while a processor handles personal data on behalf of a controller. Consumer privacy acts generally impose obligations such as maintaining reasonable security measures, prohibiting discrimination against consumers, and ensuring rights to know what data is collected, to access and delete that data, and to opt out of its sale or certain processing activities, such as targeted advertising. Enforcement in these states also resides with the Attorney General.
 
 ## Summary
-<table>
+<table style="font-size: 12px; line-height: 1.4;">>
   <thead>
     <tr style="text-align: center;">
       <th></th>
@@ -248,112 +248,6 @@ In most other states, data brokers are governed indirectly by broader consumer p
       <td>The majority of data brokers explicitly guarantee the right to access (88%), correct (81%), and delete data (89%), as well as opt-out of data collection or sharing (96%) and offer protections against discrimination (63.5%). Under half (44%) provide some restrictions on targeted advertising.</td>
       <td>Participants were in favor of options to opt out of data collection or sharing, protections against discrimination, the right to delete data, the right to access data, restrictions on targeted advertising, and the right to correct personal data, in decreasing order. The most popular provision being options to opt out of data collection or sharing.</td>
       <td>Of the 19 states with comprehensive consumer privacy laws, all provide the right to access personal data, 94.44% provide the right to correct and delete, and 47.34% ban discrimination. Some allow opt-outs for targeted advertising for minors (MD, DE, CT).</td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-  <thead>
-    <tr style="text-align: center;">
-      <th width="15%">Category</th>
-      <th width="28%">Data Brokers</th>
-      <th width="28%">Consumer Preference</th>
-      <th width="28%">State Legislators</th>
-    </tr>
-  </thead>
-  <caption style="caption-side:bottom; text-align: center; padding-top: 10px;">
-    <small><i><b>Table 3:</b> Summarized Findings</i></small>
-  </caption>
-  <tbody>
-    <tr>
-      <td style="text-align: center;"><b>Data Type</b></td>
-      <td>
-        <ul>
-            <li><b>91.7%:</b> Commercial data</li>
-            <li><b>82.4%:</b> Employment data</li>
-            <li><b>70.5%:</b> Address data</li>
-            <li><b>66.7%:</b> Social network data</li>
-            <li><b>~21%:</b> Minors’ data</li>
-            <li><b>&lt;7%:</b> Gov ID &amp; Biometrics</li>
-        </ul>
-      </td>
-      <td>
-        <ul>
-            <li><b>Most Accepted:</b> Commercial (53%) &amp; Employment (35%).</li>
-            <li><b>Least Accepted:</b> All others (&lt;25%).</li>
-            <li><b>Unsure:</b> 27.4% of users.</li>
-        </ul>
-      </td>
-      <td>
-        Most laws <b>narrowly define</b> personal data (addresses, biometrics, Gov IDs), often <b>excluding</b> transaction and employment records.
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align: center;"><b>Data Use</b></td>
-      <td>
-        <ul>
-            <li><b>95.5%:</b> Marketing</li>
-            <li><b>86%:</b> Personalized Ads</li>
-            <li>Other uses (Law enforcement, finance) frequently not reported.</li>
-        </ul>
-      </td>
-      <td>
-        <ul>
-            <li><b>63%:</b> Approve Personalized Ads</li>
-            <li><b>44%:</b> Approve Marketing</li>
-            <li><b>24%:</b> Disapprove of <i>all</i> uses.</li>
-        </ul>
-      </td>
-      <td>
-        <ul>
-            <li><b>No states</b> prohibit these use cases.</li>
-            <li>Most provide opt-out rights.</li>
-            <li>Only <b>4 states</b> (CA, VT, OR, TX) maintain registries.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align: center;"><b>Entity Sharing</b></td>
-      <td>
-        Overwhelmingly allow sharing to <b>Corporations</b>. Sharing to Gov/Education is less common but allowed if reported.
-      </td>
-      <td>
-        <ul>
-            <li><b>85%:</b> Comfortable with Education/Research.</li>
-            <li><b>35%:</b> Comfortable with Gov.</li>
-            <li><b>24%:</b> Comfortable with Corps.</li>
-        </ul>
-      </td>
-      <td>
-        <b>No states</b> prohibit sharing with Corporations, Government, or Research institutions.
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align: center;"><b>Consumer Rights</b></td>
-      <td>
-        <ul>
-            <li><b>96%:</b> Opt-out allowed</li>
-            <li><b>88-89%:</b> Access &amp; Delete</li>
-            <li><b>81%:</b> Correct data</li>
-            <li><b>44%:</b> Ad restrictions</li>
-        </ul>
-      </td>
-      <td>
-        <b>Top Desires:</b>
-        <ol>
-            <li>Opt-out of collection (Top Choice)</li>
-            <li>Anti-discrimination</li>
-            <li>Right to Delete</li>
-        </ol>
-      </td>
-      <td>
-        <b>Of 19 Comprehensive Laws:</b>
-        <ul>
-            <li><b>100%:</b> Right to Access</li>
-            <li><b>94%:</b> Right to Correct/Delete</li>
-            <li><b>47%:</b> Ban discrimination</li>
-        </ul>
-      </td>
     </tr>
   </tbody>
 </table>
