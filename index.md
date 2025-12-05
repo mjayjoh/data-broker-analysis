@@ -29,7 +29,7 @@ By now, you might feel uneasy, but perhaps you’re wondering: what is the real 
 
 <table>
   <thead>
-    <tr>
+    <tr style="text-align: center;">
       <th>Agency</th>
       <th>Practices</th>
     </tr>
@@ -38,23 +38,23 @@ By now, you might feel uneasy, but perhaps you’re wondering: what is the real 
           <sub>*was implicated in the Cambridge Analytica scandal</sub>
   </caption>
   <tbody>
-    <tr>
+    <tr style="text-align: center;">
       <td><b>Acxiom*</b></td>
       <td>Collects and sells extensive data on over <mark>2.5 billion</mark> consumers worldwide, covering demographics, finances, interests, behaviors, purchases, and even geolocation.</td>
     </tr>
-    <tr>
+    <tr style="text-align: center;">
       <td><b>LexisNexis</b></td>
       <td>Links over <mark>283 million</mark> U.S. consumer profiles with billions of records on finances, property, vehicles, and phone numbers. Offers tools to track people’s locations, connections, and identities, search criminal and public records, and provide real-time updates, with data sourced from both U.S. and international databases.</td>
     </tr>
-    <tr>
+    <tr style="text-align: center;">
       <td><b>Nielsen</b></td>
       <td>Collects extensive audience and consumer data across more than <mark>60,000</mark> segments, tracking demographics, spending, media use, shopping habits, and credit card transactions.</td>
     </tr>
-    <tr>
+    <tr style="text-align: center;">
       <td><b>Experian*</b></td>
       <td>Handles over <mark>2 billion</mark> records each month, holds over 8 billion name and address combinations, and holds data on about 95% of the U.S. population, linking billions of transactions and personal identifiers into detailed consumer profiles.</td>
     </tr>
-    <tr>
+    <tr style="text-align: center;">
       <td><b>Equifax</b></td>
       <td>Collects data on <mark>45% of the nation’s assets</mark>, covering financial habits, spending, credit, and lifestyle behaviors across many categories, links customer data with third-party information for marketing insights, and buys payroll and employment data.</td>
     </tr>
@@ -70,7 +70,7 @@ We used a data broker dataset compiled by Privacy Rights Clearinghouse, a nonpro
 
 <table>
   <thead>
-    <tr>
+    <tr style="text-align: center;">
       <th>Entity</th>
       <th>Data Brokers</th>
       <th>Consumer Preferences</th>
@@ -81,25 +81,25 @@ We used a data broker dataset compiled by Privacy Rights Clearinghouse, a nonpro
           Table 2: Sources of Data
   </caption>
   <tbody>
-    <tr>
+    <tr style="text-align: center;">
       <td><b>Data Type</b></td>
       <td>Privacy Rights Clearinghouse Data</td>
       <td>Survey</td>
       <td>Independent Analysis</td>
     </tr>
-    <tr>
+    <tr style="text-align: center;">
       <td><b>Data Use</b></td>
       <td>LLM-parsed Privacy Policies</td>
       <td>Survey</td>
       <td>Independent Analysis</td>
     </tr>
-    <tr>
+    <tr style="text-align: center;">
       <td><b>Entity Sharing</b></td>
       <td>LLM-parsed Privacy Policies</td>
       <td>Survey</td>
       <td>Independent Analysis</td>
     </tr>
-    <tr>
+    <tr style="text-align: center;">
       <td><b>Consumer Rights</b></td>
       <td>LLM-parsed Privacy Policies</td>
       <td>Survey</td>
@@ -110,8 +110,10 @@ We used a data broker dataset compiled by Privacy Rights Clearinghouse, a nonpro
 
 ## What we found
 ### The Practices of Data Brokers
-A majority of data brokers collect address data, commercial transactions data, employment data, and social network data. Among the other data types, approximately 3.2% of our data brokers collect biometric data, 21.3% of data brokers collect minors’ data, 1.6% of data brokers collect reproductive health data, and 6.5% of data brokers collect government ID data, such as Social Security Numbers. However, with the exception of minors’ data, where approximately 45% of data brokers explicitly report whether they collect or do not collect minors’ data, data brokers overwhelmingly do not even disclose whether they collect the other forms of sensitive data, such as social network data, employment data, commercial transactions data, biometric data, government ID data, addresses, and reproductive health data. This transparency gap highlights the shadowy practices of data brokers: joint human (Privacy Rights Clearinghouse, Electronic Frontier Foundation, and the Harvard Law School Cyberlaw Clinic) and algorithmic analysis of data broker registrations across state registry databases were unable to determine whether data brokers collected some forms of sensitive data.
-![Nice Graph](/notebooks/imgs/visualization.svg)
+As shown in the figures below, the majority of data brokers that do report the type of data they collect gather address data, commercial transactions data, employment data, and social network data. Among the other data types, approximately 3.2% of our data brokers collect biometric data, 21.3% of data brokers collect minors’ data, 1.6% of data brokers collect reproductive health data, and 6.5% of data brokers collect government ID data, such as Social Security Numbers. However, with the exception of minors’ data, where approximately 45% of data brokers explicitly report whether they collect or do not collect minors’ data, data brokers overwhelmingly do not even disclose whether they collect the other forms of sensitive data, such as social network data, employment data, commercial transactions data, biometric data, government ID data, addresses, and reproductive health data. This transparency gap highlights the shadowy practices of data brokers: joint human (Privacy Rights Clearinghouse, Electronic Frontier Foundation, and the Harvard Law School Cyberlaw Clinic) and algorithmic analysis of data broker registrations across state registry databases were unable to determine whether data brokers collected some forms of sensitive data.
+
+![Permitted Data Types Collected By Data Brokers](/notebooks/imgs/data_type_chart.svg)
+*Figure 1: Permitted Data Types Collected, Per Data Broker Privacy Policies*
 
 ### What consumers want
 We asked survey respondents about their knowledge and understanding of data broker practices. Among the 62 survey respondents, 69.35% indicated a low or nonexistent understanding of data brokers: either “I’ve never heard of data brokers” (the most common response) or “I’ve heard of them but don’t know what they do.” 3.23% of respondents indicated they either have a good understanding of data brokers. A majority of respondents believed that data brokers collect biometric (62.90%), commercial (91.94%), employment (83.87%), location (88.71%), network data (91.94%), and reproductive health data (54.84%). Only 37% of respondents believed that data brokers collect minors’ data and 40% believed they collect government ID data. 
