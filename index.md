@@ -113,43 +113,146 @@ We used a data broker dataset compiled by Privacy Rights Clearinghouse, a nonpro
 As shown in the figures below, the majority of data brokers that do report the type of data they collect gather address data, commercial transactions data, employment data, and social network data. Among the other data types, approximately 3.2% of our data brokers collect biometric data, 21.3% of data brokers collect minors’ data, 1.6% of data brokers collect reproductive health data, and 6.5% of data brokers collect government ID data, such as Social Security Numbers. However, with the exception of minors’ data, where approximately 45% of data brokers explicitly report whether they collect or do not collect minors’ data, data brokers overwhelmingly do not even disclose whether they collect the other forms of sensitive data, such as social network data, employment data, commercial transactions data, biometric data, government ID data, addresses, and reproductive health data. This transparency gap highlights the shadowy practices of data brokers: joint human (Privacy Rights Clearinghouse, Electronic Frontier Foundation, and the Harvard Law School Cyberlaw Clinic) and algorithmic analysis of data broker registrations across state registry databases were unable to determine whether data brokers collected some forms of sensitive data.
 ![Permitted Data Types Collected By Data Brokers](/notebooks/imgs/data_type_chart.svg)
 Figure 1: Permitted Data Types Collected, Per Data Broker Privacy Policies
+![Transparency Gaps in Data Types Collected by Data Brokers](/notebooks/imgs/data-collection-practices.png)
+Figure 2: Transparency Gaps in Data Types Collected by Data Brokers
+
+Furthermore, in terms of what personal data collected by data brokers is allowed to be used for, our LLM-parsing analysis demonstrates that the majority of data brokers explicitly allow personal data to be used for marketing (95.5%) and personalized advertising (86%). Approximately 60 to 70 percent of data brokers do not mention data use in the contexts of employment, consumer finance, and law enforcement requests (without a subpoena). Among the privacy policies that do mention these use cases, 59% allow data to be used in employment decisions. Figure 3 shows these trends below.
+
+![Permitted Data Uses By Data Brokers](/notebooks/imgs/permitted-data-use-cases-in-privacy-policies-of-data-brokers.png)
+Figure 3: Permitted Data Uses, Per Data Broker Privacy Policies
+
+Among the sample of 200 privacy policies we analyzed, almost all (99%) of the data brokers allow data sharing with corporations, as shown in Figure 4. The majority of data broker privacy policies do not explicitly report whether data sharing is or is not allowed with the government or educational/research institutions. Of those that do report this data, 96.6% allow data sharing with the government and 95.2% permit sharing with educational/research institutions.
+
+![Permitted Data Uses By Data Brokers](/notebooks/imgs/permitted-entity-data-sharing-in-privacy-policies-of-data-brokers.png)
+Figure 4: Permitted Entities To Share Data With, Per Data Broker Privacy Policies
+
+The vast majority of data brokers explicitly guarantee the right to access, correct, and delete data, as well as opt out of collection or sharing, as displayed in Figure 5. Approximately 63.5% of data brokers include non-discrimination statements around data use in their privacy policies, and 96% include provisions that allow users to opt out of data sharing and collection.
+
+![User Rights and Controls in Data Broker Privacy Policies](/notebooks/imgs/user-rights-and-controls-in-privacy-policies-of-data-brokers.png)
+Figure 5: User Rights and Controls in Data Broker Privacy Policies
+
 
 ### What consumers want
-We asked survey respondents about their knowledge and understanding of data broker practices. Among the 62 survey respondents, 69.35% indicated a low or nonexistent understanding of data brokers: either “I’ve never heard of data brokers” (the most common response) or “I’ve heard of them but don’t know what they do.” 3.23% of respondents indicated they either have a good understanding of data brokers. A majority of respondents believed that data brokers collect biometric (62.90%), commercial (91.94%), employment (83.87%), location (88.71%), network data (91.94%), and reproductive health data (54.84%). Only 37% of respondents believed that data brokers collect minors’ data and 40% believed they collect government ID data. 
+We surveyed respondents about their familiarity and understanding of data broker practices, which is displayed in Figure 6. Among the 62 survey respondents, 69.4% indicated a low or nonexistent understanding of data brokers: either “I’ve never heard of data brokers” (the most common response) or “I’ve heard of them but don’t know what they do.” The majority of respondents believed that data brokers collect biometric (62.9%), commercial (91.9%), employment (83.9%), location (88.7%), network data (91.9%), and reproductive health data (54.8%). Only 37% of respondents believed that data brokers collect minors’ data and 40% believed they collect government ID data. 
 
-When respondents were asked about their preferences, the data differed greatly from their answers around data broker collection practices. While respondents overestimated the types of data that data brokers collect, with the exception of accuracy for commercial (~90%) and employment (~80%) data, the responses indicate that individuals did not want data brokers to collect their personal data, across all data types. The most “permitted” data type to collect was commercial transactions data (at 53.23%) and then employment data (35.48%). Less than a quarter of respondents felt comfortable with data brokers collecting their biometric, location, minors, reproductive health, and government ID data, at approximately 3.23% for minors and 1.613% for government ID data. Notably, about a quarter of respondents were unsure about what data types they felt comfortable with data brokers collecting (note that respondents could select multiple options).
+![Data Types That Respondents Believe Data Brokers Collect](/notebooks/imgs/survey_type_collected.svg)
+Figure 6: Data Types That Respondents Believe Data Brokers Collect
 
-In terms of purposes their personal data is used for, the most “approved” category was personalized advertising (although only at 62.90%), and then marketing (43.55%), and employment decisions (25.81%). Results indicated a general distrust and disapproval toward their personal data being used for any of the options—24.19% responded that they were uncomfortable with all the options. 
+The results of Figures 6 and 7 demonstrate a clear mismatch between respondents’ perceptions of current practices and their preferences. While they greatly overestimated the frequency at which data brokers collect data across different data types, with the exception of accuracy for commercial and employment data, responses showed that they did not want data brokers to collect these forms of data. To survey respondents, the most “permissible” data type to collect was commercial transactions data (53.2%) and then employment data (35.5%). Less than a quarter of respondents felt comfortable with data brokers collecting their biometric, location, minors, reproductive health, and government identification data, at approximately 3.2% for minors and 1.6% for government identification data. 
 
-The results in response to the question of which entities respondents felt comfortable with their data being shared to also depart drastically from the actual practices listed in privacy policies. 85.48% of respondents felt comfortable with data being shared to educational and research institutions, and then government agencies at 35.48%, and corporations last at 24.19%. 11.29% did not approve of sharing to any of these three entities.
+![Data Types That Respondents Are Comfortable with Data Brokers Collecting](/notebooks/imgs/survey_type_comfort.svg)
+Figure 7: Data Types That Respondents Are Comfortable with Data Brokers Collecting
 
-Our survey also asked respondents about provisions and safeguards they would like to see in privacy policies and laws. The most frequently selected provision was the “Option to opt out of data collection or sharing” at 93.55%, and then protections against discrimination (83.87%), and the right to access personal data (77.42%). That said, all the listed provisions were selected at at least 69% frequency.  
+In terms of purposes their personal data is used for, the most “approved” category was personalized advertising (62.9%), and then marketing (43.6%) and employment (25.8%). Results indicated general disapproval around their personal data being used across purposes—24.2% responded that they were uncomfortable with all the options. These results are shown in Figure 8.
 
-We also decided to analyze the attitudes of Californian residents toward the DELETE Act. Of the 12 respondents surveyed, 25% were aware of the DELETE Act prior to the survey. After providing a description of the Act’s tools, 25% stated they would use the DELETE Act’s mechanisms once they became active and 66.66% indicated that they might use them.
+![Use Cases that Respondents Are Comfortable With](/notebooks/imgs/survey_purposes_comfort.svg)
+Figure 8: Use Cases that Respondents Are Comfortable With
+
+Respondents also indicated extreme disapproval with their data shared with corporations, which differed greatly from research and educational institutions: 85.5% of respondents felt comfortable with their data being shared to educational and research institutions, and then government agencies at 35.5%, and corporations last at 24.2%. Notably, 11.29% did not approve of sharing to any of these three entities. These results are shown in Figure 9.
+
+![Entities That Respondents Are Comfortable With Their Data Shared To](/notebooks/imgs/survey_entities.svg)
+Figure 9: Entities That Respondents Are Comfortable With Their Data Shared To
+
+Our survey also asked respondents about provisions and safeguards they would like to see in privacy policies and laws. The most frequently selected provision was the “Option to opt out of data collection or sharing” at 93.6%, and then protections against discrimination (83.9%) and the right to access personal data (77.4%). That said, all the listed provisions were selected at at least 69% frequency. This data is displayed in Figure 10.
+
+![Provisions In Privacy Policies and Laws Respondents Desire](/notebooks/imgs/survey_user_controls.svg)
+Figure 10: Provisions In Privacy Policies and Laws Respondents Desire
+
+Lastly, we were curious about the attitudes of Californian residents toward the DELETE Act, one of the most forward-thinking privacy statutes governing the data broker industry. Of the 12 Californian respondents surveyed, a quarter were aware of the DELETE Act prior to the survey. After providing a description of the Act’s tools, a quarter stated they intend to use the DELETE Act’s mechanisms once they become active, and two-thirds indicated that they might use them.
 
 ### The (in)action of regulators
-Discuss federal and state laws; The majority of states do not even have comprehensive consumer privacy laws and only five explicitly regulate data brokers (CA, OR, TX, VT, NV).
-## Summary
+Several federal frameworks may also constrain the practices of data brokers, but only in specific domains. For example, the Fair Credit Reporting Act (FCRA) regulates consumer reporting agencies, the Health Insurance Portability and Accountability Act (HIPAA) covers patient privacy, and the Children’s Online Privacy Protection Act (COPPA) protects the privacy of those under 13. The Federal Trade Commission (FTC), an independent agency, has authority to restrain unfair and deceptive trade practices, and have brought actions against data brokers. That said, the FTC sometimes lacks authority over enforcing against actions that do not fall within its statutory mandate, and enforcement is reactive, not practice. Congress has passed regulation prohibiting the sale or sharing of personal information with foreign adversary countries or entities they control, but this law does not restrict transfers to domestic entities. Furthermore, there does not exist a comprehensive federal framework governing consumer privacy, much less data brokers.
 
-| Category | Data Brokers | Consumer Preferences | State Laws |
-|---|---|---|---|
-| **Data Type** | A majority of data brokers collect commercial transactions data (91.7%), employment data (82.4%), address data (70.5%), and social network data (66.7%). Approximately one-fifth collect minors’ data. 6.5% collect government ID data and less than 5% collect biometric and reproductive health-care data. | Commercial transactions data is the data type individuals are most comfortable with data brokers collecting (53.23%) and then employment (35.48%), although these percentages all tend to be low (the rest are <25%). A significant portion were unsure about their preferences (27.42%). | Most state laws narrowly define personal data as identifiers such as addresses, birth details, family information, biometrics, and government ID numbers, while excluding transaction and employment records from this category. |
-| **Data Use** | A majority of data brokers explicitly permit personal data to be used for marketing and personalized ads (XXX). Other use cases (employment, consumer finance, law enforcement requests without subpoena) are frequently not reported. | The most “approved” data use categories were personalized advertising (62.90%), marketing (43.55%), and employment decisions (25.81%). Results indicated a general distrust and disapproval toward their personal data being used for any of the options—about a quarter stated that they were uncomfortable with all listed options. | None of the states prohibit the listed data broker use cases, though most provide residents with opt‑out rights. Currently only four states, namely California, Vermont, Oregon, and Texas, maintain formal data broker registries, which may complicate enforcement of these laws. |
-| **Entity Sharing** | Data sharing overwhelmingly allowed to corporations, and if reported, mostly allowed to the government and educational/research institutions. | Respondents were comfortable with data shared to educational and research institutions (85.48%), but uncomfortable with data sharing with government agencies (35.48%) and corporations (24.19%). | None of the states prohibits sharing data to corporations, the government, and educational/research institutions. |
-| **Consumer Rights** | The majority of data brokers explicitly guarantee the right to access, correct, and delete data, and opt-out of collection or sharing, as well as protections against discrimination. XXX provide restrictions on targeted advertising. | Participants were in favor of options to opt out of data collection or sharing, protections against discrimination, the right to delete data, the right to access data, restrictions on targeted advertising, and the right to correct personal data, in decreasing order. The most popular provision being options to opt out of data collection or sharing. | Of the 19 states with comprehensive consumer privacy laws, all provide the right to access personal data, 94.44% provide the right to correct and delete, and 47.34% ban discrimination. Some allow opt-outs for targeted advertising for minors (MD, DE, CT). |
+Nineteen states lack comprehensive consumer privacy laws, but only five (California, Oregon, Texas, Vermont, and Nevada) explicitly regulate data brokers. A key distinction is that these states not only address data brokers directly in their privacy frameworks but also require them to register with the state on an annual basis. Some states merely require data brokers to register, while others provide consumers with some rights and controls over their personal data. With the exception of Vermont, whose statute focuses on credit reporting agencies, they mandate opt‑out provisions for third‑party data sharing and sales, and they grant consumers rights to access, correct, and delete personal data, while prohibiting discriminatory uses of such data. Enforcement generally falls under the jurisdiction of the state Attorney General, though California has delegated oversight to the California Privacy Protection Agency (CPPA), which is specifically empowered to monitor data broker practices. California’s DELETE Act, for example, requires the California Privacy Protection Agency (CPPA) to create an accessible universal deletion mechanism by January 1, 2026. Consumers will then be able to access the platform to submit requests, and then data brokers must comply with deletion requests starting later in the year. It also requires data brokers to submit to independent, third-party audits for compliance.
+
+In most other states, data brokers are governed indirectly by broader consumer privacy statutes. These laws do not explicitly reference data brokers but instead define “controllers” and “processors,” categories that encompass data broker activities. A controller is typically defined as an entity that determines the purposes and means of processing personal data, while a processor handles personal data on behalf of a controller. Consumer privacy acts generally impose obligations such as maintaining reasonable security measures, prohibiting discrimination against consumers, and ensuring rights to know what data is collected, to access and delete that data, and to opt out of its sale or certain processing activities, such as targeted advertising. Enforcement in these states also resides with the Attorney General.
+
+## Summary
+<table>
+  <thead>
+    <tr style="text-align: center;">
+      <th></th>
+      <th>Data Brokers</th>
+      <th>Consumer Preference</th>
+      <th>State Legislators</th>
+
+    </tr>
+  </thead>
+  <caption style="caption-side:bottom; text-align: center; padding-top: 10px;">
+          Table 3: Summarized Table of Findings
+  </caption>
+  <tbody>
+    <tr style="text-align: center;">
+      <td><b>Data Type</b></td>
+      <td>A majority of data brokers collect commercial transactions data (91.7%), employment data (82.4%), address data (70.5%), and social network data (66.7%). Approximately 21.3% collect minors’ data. 6.5% collect government ID data and less than 5% collect biometric and reproductive health-care data.</td>
+      <td>Commercial transactions data is the data type individuals are most comfortable with data brokers collecting (53.23%) and then employment (35.48%), although these percentages all tend to be low (the rest are &lt;25%). A significant portion were unsure about their preferences (27.42%).</td>
+      <td>Most state laws narrowly define personal data as identifiers such as addresses, birth details, family information, biometrics, and government ID numbers, while excluding transaction and employment records from this category.</td>
+    </tr>
+    <tr style="text-align: center;">
+      <td><b>Data Use</b></td>
+      <td>A majority of data brokers explicitly permit personal data to be used for marketing (95.5%) and personalized ads (86%). Other use cases (employment, consumer finance, law enforcement requests without subpoena) are frequently not reported.</td>
+      <td>The most “approved” data use categories were personalized advertising (62.9%), marketing (43.55%), and employment decisions (25.81%). Results indicated a general distrust and disapproval toward their personal data being used for any of the options—about a quarter stated that they were uncomfortable with all listed options.</td>
+      <td>None of the states prohibit the listed data broker use cases, though most provide residents with opt‑out rights. Currently only four states, namely California, Vermont, Oregon, and Texas, maintain formal data broker registries, which may complicate enforcement of these laws.</td>
+    </tr>
+    <tr style="text-align: center;">
+      <td><b>Entity Sharing</b></td>
+      <td>Data sharing overwhelmingly allowed to corporations, and if reported, mostly allowed to the government and educational/research institutions.</td>
+      <td>Respondents were comfortable with data shared to educational and research institutions (85.48%), but uncomfortable with data sharing with government agencies (35.48%) and corporations (24.19%). </td>
+      <td>None of the states prohibits sharing data to corporations, the government, and educational/research institutions. </td>
+    </tr>
+    <tr style="text-align: center;">
+      <td><b>Consumer Rights</b></td>
+      <td>The majority of data brokers explicitly guarantee the right to access (88%), correct (81%), and delete data (89%), as well as opt-out of data collection or sharing (96%) and offer protections against discrimination (63.5%). Under half (44%) provide some restrictions on targeted advertising.</td>
+      <td>Participants were in favor of options to opt out of data collection or sharing, protections against discrimination, the right to delete data, the right to access data, restrictions on targeted advertising, and the right to correct personal data, in decreasing order. The most popular provision being options to opt out of data collection or sharing.</td>
+      <td>Of the 19 states with comprehensive consumer privacy laws, all provide the right to access personal data, 94.44% provide the right to correct and delete, and 47.34% ban discrimination. Some allow opt-outs for targeted advertising for minors (MD, DE, CT).</td>
+    </tr>
+    <tr style="text-align: center;">
+      <td><b>Equifax</b></td>
+      <td>Collects data on <mark>45% of the nation’s assets</mark>, covering financial habits, spending, credit, and lifestyle behaviors across many categories, links customer data with third-party information for marketing insights, and buys payroll and employment data.</td>
+    </tr>
+  </tbody>
+</table>
+<div style="text-align:center">Table 1: A Glimpse into the Data Broker Industry</div>
+
+We mapped our most notable findings in Table 3, stratifying by category (data type, data use, entity sharing, consumer rights) and actors (data brokers, consumer preferences, state legislators). Survey results indicate general distrust toward data brokers; they tend to overestimate the amount of sensitive data that brokers collect, while indicating significant disapproval of this collection. One key difference between data broker practices and consumer preferences is the decision to share personal data with corporations. Only 24.2% of respondents approved data sharing to corporations; 99% of data brokers we analyzed allow sharing to corporations.
+
+The two data types that consumers find most permissible for data brokers to collect do in fact align with the two most common data types that data brokers actually collect (commercial transactions and employment data), but the gap between these two sets of percentages are 38.5% and 46.9%, respectively. A similar pattern is true for use cases of personal data: consumers are most likely to approve of personalized advertising and marketing, which are the two most common explicitly permitted use cases of data. For example, marketing was the most common explicitly permitted use case of data by data brokers, at 95.5%, and the second most “approved” use case by participants. However, less than half (43.5%) of that percentage of participants approved of the marketing use case. Figures 11 and 12 display these disparities.
+
+GRAPHADSFHASPDFHAPS FHPASDHJFPASDFHAPSD
+
+
+A significant portion of respondents expressed uncertainty about which data types they were comfortable with data brokers collecting, which reflects the opaque nature of the industry. Consumers cannot make informed choices without knowledge of the actual and intended use cases of their personal data, especially post-data collection. Our survey results indicate this knowledge gap—the vast majority of respondents had never heard of data brokers, or had limited understanding of their practices, prior to the survey. 
+
+Despite many data brokers allegedly providing the provisions that consumers want (e.g., the right to access and delete personal data, as well as opt-out mechanisms), approximately 95% of surveyed individuals were either unaware of deletion and/or have never requested to delete their personal data. We tested these mechanisms ourselves, and found they were not consistently reliable. In practice, the deletion process often proved cumbersome and ineffective. Several companies required consumers to submit requests through online forms—yet even after providing an email address, we did not receive any follow‑up, and no alternative communication channels were made available. In one case, a listed phone number was connected to an automated voice that redirected callers back to the same unresponsive form. In another, the company denied being a data broker altogether, despite its own privacy policy explicitly acknowledging the sale of personal information. 
+
+Furthermore, results from Californians asked about the DELETE Act reinforce that merely passing a statute is not enough to provide consumers with data protections. Education plays a crucial role in helping individuals understand and exercise their data rights. While only a quarter of surveyed Californians knew about the DELETE Act prior to taking the survey, over 90% expressed willingness to use the tools that the California Privacy Protection Agency will provide during DELETE Act implementation.
+
+However, while education is important, an approach that solely relies on individuals to delete their own data is wholly insufficient for providing meaningful privacy. This deficiency is especially acute given the enormity of the data broker industry, whose business model depends on its secrecy. While data broker companies must comply with privacy statutes in jurisdictions in which they operate, they often turn a blind eye to consumers’ privacy beyond publishing lengthy, difficult-to-read privacy policies. These policies are extremely difficult to parse (even for those with a university-level education) and would take approximately 30 minutes to read each. 
 
 ## So what’s next? 
-Moving forward, [go into what should happen]
+Our analysis shows that regulatory action, paired with data literacy, can help bridge the gap between consumer preferences and the actual practices of data brokers. Regulators should pass laws that provide consumers with more meaningful controls, while also bolstering enforcement of existing privacy laws. They can codify consumer preferences we uncovered, such as strict limits on data sharing with corporations, in law.
 
-In terms of next steps for a similar project, [go into limitations]
+Data broker-specific statutes may even be necessary. Regular reporting requirements to enforcement bodies, such as California’s Privacy Protection Agency, are also good steps toward ensuring legal compliance while bringing transparency to an opaque industry. Independent, third-party audits of internal firm processes, as well as any external privacy guarantees (such as the right to delete your data), should be conducted on a regular basis. Furthermore, legal regimes can provide clearer guidance on the definition and responsibilities of data brokers. Currently, data brokers often claim ignorance to evade legal accountability.
 
-## Sources of Data
+Beyond encouraging legal compliance, our findings suggest that agencies can take steps to centralize data broker registration to allow consumers to easily exercise controls over their personal data with one click. While some states have established data broker registries, many stop at data broker registration and do not provide any controls to consumers. As states are laboratories of democracy, state-level action is both desirable and feasible for creating a blueprint for national efforts.
 
-Link and describe Github here
+Our results reveal a significant disconnect between consumer preferences, data brokers, and laws. Data brokers cannot self-regulate. Regulators must intervene. Without meaningful action, data brokers will continue profiting from our most intimate data in the shadows—information that can be weaponized against us.
 
-## Questions to ask Jotte
-Is it ok that it’s a summary b/c hard to 1 to 1 analysis
-Limitations? Should that be listed if it’s like “pop science”
-How to straddle the boundary between pop science and reporting results
-Length?
-Citations?
+
+## Sources
+
+https://www.pewresearch.org/internet/2019/11/15/americans-attitudes-and-experiences-with-privacy-policies-and-laws/
+https://www.theatlantic.com/technology/archive/2012/03/reading-the-privacy-policies-you-encounter-in-a-year-would-take-76-work-days/253851/
+https://nordvpn.com/blog/privacy-policy-study-us/#:~:text=their%20personal%20information.-,What%20do%20the%20US%20results%20show?,you%20would%20earn%20approximately%20$338.14.
+https://www.nytimes.com/interactive/2019/06/12/opinion/facebook-google-privacy-policies.html
+https://www.congress.gov/bill/119th-congress/house-bill/2612/all-info
+https://www.eff.org/deeplinks/2025/06/why-are-hundreds-data-brokers-not-registering-states
+https://epic.org/wp-content/uploads/2025/04/EPIC-PIRG-State-of-Privacy-2025.pdf
+https://epic.org/wp-content/uploads/2025/04/EPIC-PIRG-State-of-Privacy-2025.pdf
+https://epic.org/issues/consumer-privacy/data-brokers/
+https://globalcyberstrategies.substack.com/p/data-brokers-and-privacy-and-security
+https://www.ftc.gov/news-events/news/press-releases/2024/12/ftc-takes-action-against-gravy-analytics-venntel-unlawfully-selling-location-data-tracking-consumers#:~:text=The%20agency's%20other%20cases%20include%20a%202022,InMarket%20for%20selling%20precise%20user%20location%20data.
+https://www.ftc.gov/news-events/news/press-releases/2024/12/ftc-takes-action-against-mobilewalla-collecting-selling-sensitive-location-data#:~:text=The%20agency%20has%20opened%20similar%20cases%2C%20including,InMarket%20for%20selling%20precise%20user%20location%20data.
+https://therealistjuggernaut.com/wp-content/uploads/2025/10/1.-Data-Brokers-and-Sensitive-Data-on-US-Individuals-Sherman-2021.pdf
+https://heinonline.org/HOL/Page?handle=hein.journals/adelphlj22&div=5&g_sent=1&casa_token= 
+https://www.forbes.com/sites/robpegoraro/2020/10/08/the-real-problem-wasnt-cambridge-analytica-but-the-data-brokers-that-outlived-it/
