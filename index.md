@@ -211,7 +211,7 @@ Nineteen states lack comprehensive consumer privacy laws, but only five (Califor
 In most other states, data brokers are governed indirectly by broader consumer privacy statutes. These laws do not explicitly reference data brokers but instead define “controllers” and “processors,” categories that encompass data broker activities. A controller is typically defined as an entity that determines the purposes and means of processing personal data, while a processor handles personal data on behalf of a controller. Consumer privacy acts generally impose obligations such as maintaining reasonable security measures, prohibiting discrimination against consumers, and ensuring rights to know what data is collected, to access and delete that data, and to opt out of its sale or certain processing activities, such as targeted advertising. Enforcement in these states also resides with the Attorney General.
 
 ## Summary
-<table style="font-size: 12px; line-height: 1.4;">>
+<table>
   <thead>
     <tr style="text-align: center;">
       <th></th>
@@ -221,10 +221,10 @@ In most other states, data brokers are governed indirectly by broader consumer p
 
     </tr>
   </thead>
-  <caption style="caption-side:bottom; text-align: center; padding-top: 10px; font-size: 14px;">
+  <caption style="caption-side:bottom; text-align: center; padding-top: 10px;">
           <small><i><b>Table 3:</b> Summarized Table of Findings</i></small>
   </caption>
-  <tbody>
+  <tbody style="font-size: 12px; line-height: 1.4;">
     <tr>
       <td style="text-align: center;"><b>Data Type</b></td>
       <td>A majority of data brokers collect commercial transactions data (91.7%), employment data (82.4%), address data (70.5%), and social network data (66.7%). Approximately 21.3% collect minors’ data. 6.5% collect government ID data and less than 5% collect biometric and reproductive health-care data.</td>
