@@ -221,7 +221,7 @@ In most other states, data brokers are governed indirectly by broader consumer p
 
     </tr>
   </thead>
-  <caption style="caption-side:bottom; text-align: center; padding-top: 10px;">
+  <caption style="caption-side:bottom; text-align: center; padding-top: 10px; font-size: 14px;">
           <small><i><b>Table 3:</b> Summarized Table of Findings</i></small>
   </caption>
   <tbody>
