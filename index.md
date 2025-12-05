@@ -256,7 +256,19 @@ We mapped our most notable findings in Table 3, stratifying by category (data ty
 
 The two data types that consumers find most permissible for data brokers to collect do in fact align with the two most common data types that data brokers actually collect (commercial transactions and employment data), but the gap between these two sets of percentages are 38.5% and 46.9%, respectively. A similar pattern is true for use cases of personal data: consumers are most likely to approve of personalized advertising and marketing, which are the two most common explicitly permitted use cases of data. For example, marketing was the most common explicitly permitted use case of data by data brokers, at 95.5%, and the second most “approved” use case by participants. However, less than half (43.5%) of that percentage of participants approved of the marketing use case. Figures 11 and 12 display these disparities.
 
-GRAPHADSFHASPDFHAPS FHPASDHJFPASDFHAPSD
+<p align="center">
+  <img src="notebooks/imgs/Disparity - Data Types.svg" alt="Disparity in Data Types: Data Broker Collection vs. Consumer Comfort">
+</p>
+<p align="center">
+  <small><i><b>Figure 11:</b> Disparity in Data Types: Data Broker Collection vs. Consumer Comfort</i></small>
+</p>
+
+<p align="center">
+  <img src="notebooks/imgs/Disparity - Use Cases.svg" alt="Disparity in Use Cases: Data Broker Permitted vs. Consumer Comfort">
+</p>
+<p align="center">
+  <small><i><b>Figure 12:</b> Disparity in Use Cases: Data Broker Permitted vs. Consumer Comfort</i></small>
+</p>
 
 
 A significant portion of respondents expressed uncertainty about which data types they were comfortable with data brokers collecting, which reflects the opaque nature of the industry. Consumers cannot make informed choices without knowledge of the actual and intended use cases of their personal data, especially post-data collection. Our survey results indicate this knowledge gap—the vast majority of respondents had never heard of data brokers, or had limited understanding of their practices, prior to the survey. 
