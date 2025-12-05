@@ -4,7 +4,7 @@ Imagine if your location data, tracked through your phone, was sold without your
 
 
 ## What are data brokers?
-Data brokers collect, buy, and aggregate extensive personal data on individuals, selling this data (often without explicit consent) to companies that use individual profiles to micro-target subgroups for commercial and/or political gain. The table below, “A Glimpse into the Data Broker Industry” displays some of the practices of major data broker agencies—companies that probably have your data, but you’ve never heard of.
+Data brokers collect, buy, and aggregate extensive personal data on individuals, selling this data (often without explicit consent) to companies that use individual profiles to micro-target subgroups for commercial and/or political gain. Table 1, “A Glimpse into the Data Broker Industry” displays some of the practices of major data broker agencies—companies that probably have your data, but you’ve never heard of.
 
 In this business model, consumers are the product. Given the extensive adoption of digital technologies and smart wearables, these companies now know the following personal information (note that this list is not comprehensive): 
 - Name
@@ -60,13 +60,13 @@ By now, you might feel uneasy, but perhaps you’re wondering: what is the real 
     </tr>
   </tbody>
 </table>
-<div style="text-align:center"><b>A Glimpse into the Data Broker Industry</b></div>
+<div style="text-align:center"><b>Table 1: A Glimpse into the Data Broker Industry</b></div>
 
 
 ## What we did
 To shed light on the industry, we analyzed the three key players in the data broker ecosystem: data brokers, consumers, and legislatures. We created a standardized set of questions to compare the three entities across four major categories: data type collected, data use, data sharing, and user controls.
 
-We used a data broker dataset compiled by Privacy Rights Clearinghouse, a nonprofit organization focusing on privacy, who compiled data broker information from state registries. We collected information about data type from this dataset. After cleaning the dataset of data brokers, we obtained a random sample of 200 data brokers, from the full set of approximately 600. From there, we downloaded data broker privacy policies of those 200 data brokers and used a Gemini 2.5 Pro model (“Reasoning, math & code”) to query each privacy policy about data use, data sharing, and user controls. We manually validated a sample of the data. We simultaneously conducted an online survey of university students, using the standardized set of questions. The survey included dropdown questions where participants could easily select which entries they approved of. For example, for a question about data use, participants selected whether they approved of each of the specific use cases of personal data that we listed (biometric, employment, address, geolocation, etc.). We also asked Californian residents two additional questions about the DELETE Act, the strongest state statute on data brokers. Lastly, we examined state laws covering both data brokers and consumer privacy. The table below summarizes our data sources for each form of analysis.
+We used a data broker dataset compiled by Privacy Rights Clearinghouse, a nonprofit organization focusing on privacy, who compiled data broker information from state registries. We collected information about data type from this dataset. After cleaning the dataset of data brokers, we obtained a random sample of 200 data brokers, from the full set of approximately 600. From there, we downloaded data broker privacy policies of those 200 data brokers and used a Gemini 2.5 Pro model (“Reasoning, math & code”) to query each privacy policy about data use, data sharing, and user controls. We manually validated a sample of the data. We simultaneously conducted an online survey of university students, using the standardized set of questions. The survey included dropdown questions where participants could easily select which entries they approved of. For example, for a question about data use, participants selected whether they approved of each of the specific use cases of personal data that we listed (biometric, employment, address, geolocation, etc.). We also asked Californian residents two additional questions about the DELETE Act, the strongest state statute on data brokers. Lastly, we examined state laws covering both data brokers and consumer privacy. Table 2 summarizes our data sources for each form of analysis.
 
 <table>
   <thead>
@@ -78,7 +78,7 @@ We used a data broker dataset compiled by Privacy Rights Clearinghouse, a nonpro
     </tr>
   </thead>
   <caption style="caption-side:bottom; text-align: center; padding-top: 10px;">
-          Sources of Data
+          Table 2: Sources of Data
   </caption>
   <tbody>
     <tr>
