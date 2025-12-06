@@ -187,7 +187,7 @@ In terms of the purposes personal data collected by data brokers is used for, th
   <img src="notebooks/imgs/Use Cases That Respondents Are Comfortable With.svg" alt="Use Cases that Respondents Are Comfortable With">
 </p>
 <p align="center">
-  <small><i><b>Figure 9:</b> Use Cases that Respondents Are Comfortable With</i></small>
+  <small><i><b>Figure 9:</b> This figure displays the frequencies at which survey respondents were comfortable with certain use cases of their personal data.</i></small>
 </p>
 
 Respondents also indicated extreme disapproval with their data shared with corporations, which differed greatly from research and educational institutions: 85.5% of respondents felt comfortable with their data being shared to educational and research institutions, and then government agencies at 35.5%, and corporations last at 24.2%. Notably, 11.29% did not approve of sharing with any of these three entities. These results are shown in Figure 10.
