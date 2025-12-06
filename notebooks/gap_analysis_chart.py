@@ -24,7 +24,7 @@ def create_gap_chart_data_types(df_brokers, df_survey):
         "Biometric data": "CollectsBiometricData",
         "Minors' data": "CollectsMinorsData",
         "Reproductive health-related information": "CollectsReproductiveHealthData",
-        "Social Security Number and government ID information": "CollectsSSNGovID",
+        "Governmental": "CollectsSSNGovID",
         "Network data": "CollectsNetworkData"
     }
 
@@ -51,7 +51,7 @@ def create_gap_chart_data_types(df_brokers, df_survey):
         "Biometric data (e.g., fingerprint, voice, facial recognition)": "Biometric data",
         "Personal information of individuals under 18": "Minors' data",
         "Reproductive health-related information": "Reproductive health-related information",
-        "Social Security Number and government ID information": "Social Security Number and government ID information",
+        "Social Security Number and government ID information": "Governmental",
         "Network data (e.g., IP address, browsing history)": "Network data"
     }
 
@@ -89,7 +89,7 @@ def create_gap_chart_data_types(df_brokers, df_survey):
         "Minors' data",
         "Biometric data",
         "Reproductive health-related information",
-        "Social Security Number and government ID information"
+        "Governmental"
     ]
     
     ordered_categories = [cat for cat in existing_sort_order if cat in all_categories]
