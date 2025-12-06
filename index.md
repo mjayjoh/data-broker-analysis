@@ -325,10 +325,12 @@ Our results reveal a significant disconnect between consumer preferences, data b
 - Madrigal, A. C. (2012, March 1). *Reading the Privacy Policies You Encounter in a Year Would Take 76 Work Days.* The Atlantic. https://www.theatlantic.com/technology/archive/2012/03/reading-the-privacy-policies-you-encounter-in-a-year-would-take-76-work-days/253851/
 - Neally, Daniel. (2019-2021). Data Brokers and Privacy: An Analysis of the Industry and How It's Regulated. Adelphia Law Journal, 22, 30-46.
 - Nev. Rev. Stat. § 603A.010 *et seq.* (2024). 
-- Or. Rev. Stat. § 646A.005 *et seq.* (2023). Pegoraro, R. (2020, October 8).
+- Or. Rev. Stat. § 646A.005 *et seq.* (2023). 
+- Pegoraro, R. (2020, October 8).
 - The Real Problem Wasn’t Cambridge Analytica, But The Data Brokers That Outlived It. *Forbes*. https://www.forbes.com/sites/robpegoraro/2020/10/08/the-real-problem-wasnt-cambridge-analytica-but-the-data-brokers-that-outlived-it/
 - Privacy Rights Clearinghouse. (n.d.). *Data Brokers.* https://privacyrights.org/data-brokers
-- Raether Jr., R., Mirza, S., Ballesteros, K., Hamady, L., & Lin, R. W. (2023, October 19). *California Delete Act: An Aggressive New Approach to Regulating Data Brokers.* Troutman Pepper Locke. https://www.troutman.com/insights/california-delete-act-an-aggressive-new-approach-to-regulating-data-brokers/?pdf=display
+- Raether Jr., R., Mirza, S., Ballesteros, K., Hamady, L., & Lin, R. W. (2023, October 19). *California Delete Act: An Aggressive New Approach to Regulating Data Brokers.* 
+- Troutman Pepper Locke. https://www.troutman.com/insights/california-delete-act-an-aggressive-new-approach-to-regulating-data-brokers/?pdf=display
 - Sherman, J. (2021). *Data Brokers and Sensitive Data on U.S. Individuals.* Duke Sanford Cyber Policy Program.
 - Sherman, J. (2023, April 24). Data Brokers and Privacy and Security Risks. Global Cyber Digest. https://globalcyberstrategies.substack.com/p/data-brokers-and-privacy-and-security
 - Solove, D. J. (2023, March 25). *The Limitations of Privacy Rights.* Notre Dame Law Review. https://ndlawreview.org/the-limitations-of-privacy-rights/
