@@ -61,7 +61,7 @@ By now, you might feel uneasy, but perhaps you’re wondering: what is the real 
   </tbody>
 </table>
 <p align="center">
-  <small><i><b>Table 1:</b> A Glimpse into the Data Broker Industry</i></small>
+  <small><i><b>Table 1:</b> This table displays the names and practices of a few major data broker agencies.</i></small>
 </p>
 
 ## What we did
@@ -114,14 +114,14 @@ As shown in the figures below, the majority of data brokers that do report the t
   <img src="notebooks/imgs/Permitted Data Types Collected By Data Brokers.svg" alt="Permitted Data Types Collected By Data Brokers">
 </p>
 <p align="center">
-  <small><i><b>Figure 1:</b> All Data Collection Practices of Data Brokers</i></small>
+  <small><i><b>Figure 1:</b> This figure displays the frequencies at which data brokers explicitly permit, do not permit, and do not report the collection of several sensitive data types, based on their privacy policies. Many do not explicitly report this information. </i></small>
 </p>
 
 <p align="center">
   <img src="notebooks/imgs/Data Collection Practices by Category.svg" alt="Data Collection Practices by Category">
 </p>
 <p align="center">
-  <small><i><b>Figure 2:</b> Explicitly Reported Data Collection Practices Reported in Data Broker Privacy Policies</i></small>
+  <small><i><b>Figure 2:</b> This figure displays the frequencies at which data brokers explicitly permit and do not permit the collection of several sensitive data types, based on their privacy policies. The "Not Reported" category is not shown, because it encompasses such a significant portion of the results and may be distracting to the explicitly reported information.</i></small>
 </p>
 
 
@@ -131,7 +131,7 @@ Furthermore, in terms of what personal data collected by data brokers is allowed
   <img src="notebooks/imgs/Permitted Data Use Cases in Privacy Policies of Data Brokers.svg" alt="Permitted Data Uses By Data Brokers">
 </p>
 <p align="center">
-  <small><i><b>Figure 3:</b> Permitted Data Uses Reported in Data Broker Privacy Policies</i></small>
+  <small><i><b>Figure 3:</b> This figure displays the frequencies at which data brokers permit several use cases of collected personal data.</i></small>
 </p>
 
 Among the sample of 200 privacy policies we analyzed, almost all (99%) of the data brokers allow data sharing with corporations, as shown in Figure 4. The majority of data broker privacy policies do not explicitly report whether data sharing is or is not allowed with the government or educational/research institutions. Of those that do report this data, 96.6% allow data sharing with the government and 95.2% permit sharing with educational/research institutions.
@@ -140,7 +140,7 @@ Among the sample of 200 privacy policies we analyzed, almost all (99%) of the da
   <img src="notebooks/imgs/Permitted Entity Data Sharing in Privacy Policies of Data Brokers.svg" alt="Permitted Entities To Share Data With, Per Data Broker Privacy Policies">
 </p>
 <p align="center">
-  <small><i><b>Figure 4:</b> Permitted Entities To Share Data With, Per Data Broker Privacy Policies</i></small>
+  <small><i><b>Figure 4:</b> This figure displays the frequencies at which data brokers permit the sharing of personal data to several entities, based on their privacy policies.</i></small>
 </p>
 
 The vast majority of data brokers explicitly guarantee the right to access, correct, and delete data, as well as opt out of collection or sharing, as displayed in Figure 5. Approximately 63.5% of data brokers include non-discrimination statements around data use in their privacy policies, and 96% include provisions that allow users to opt out of data sharing and collection.
@@ -149,7 +149,7 @@ The vast majority of data brokers explicitly guarantee the right to access, corr
   <img src="notebooks/imgs/User Rights and Controls in Privacy Policies of Data Brokers.svg" alt="User Rights and Controls in Data Broker Privacy Policies">
 </p>
 <p align="center">
-  <small><i><b>Figure 5:</b> User Rights and Controls Reported in Data Broker Privacy Policies</i></small>
+  <small><i><b>Figure 5:</b> This figure displays the frequencies at which data brokers provide certain user rights and controls, based on their privacy policies.</i></small>
 </p>
 
 
@@ -160,7 +160,7 @@ We surveyed respondents about their familiarity and understanding of data broker
   <img src="notebooks/imgs/Survey Respondents Familiarity with Data Brokers.svg" alt="Survey Respondents Familiarity with Data Brokers">
 </p>
 <p align="center">
-  <small><i><b>Figure 6:</b> Respondents’ Familiarity with Data Brokers</i></small>
+  <small><i><b>Figure 6:</b> This figure displays the frequencies at which survey respondents were familiar with data brokers prior to the administration of the survey. It may be slightly skewed toward familiarity because some respondents were students in a data ethics class.</i></small>
 </p>
 
 As shown in Figure 7, the majority of respondents believed that data brokers collect biometric (62.9%), commercial (91.9%), employment (83.9%), location (88.7%), network data (91.9%), and reproductive health data (54.8%). Only 37% of respondents believed that data brokers collect minors’ data, and 40% believed they collect government ID data. 
@@ -169,7 +169,7 @@ As shown in Figure 7, the majority of respondents believed that data brokers col
   <img src="notebooks/imgs/Data Types that Respondents Believe Data Brokers Collect.svg" alt="Data Types That Respondents Believe Data Brokers Collect">
 </p>
 <p align="center">
-  <small><i><b>Figure 7:</b> Data Types That Respondents Believe Data Brokers Collect</i></small>
+  <small><i><b>Figure 7:</b> This figure displays the frequencies at which survey respondents believed data brokers collected several sensitive types of data.</i></small>
 </p>
 
 The results of Figures 7 and 8 demonstrate a clear mismatch between respondents’ perceptions of current practices and their preferences. While they greatly overestimated the frequency at which data brokers collect data across different data types, with the exception of accuracy for commercial and employment data, responses showed that they did not *want* data brokers to collect these forms of data. To survey respondents, the most “permissible” data type to collect was commercial transactions data (53.2%) and then employment data (35.5%). Less than a quarter of respondents felt comfortable with data brokers collecting their biometric, location, minors, reproductive health, and government identification data, at approximately 3.2% for minors and 1.6% for government identification data. 
@@ -178,7 +178,7 @@ The results of Figures 7 and 8 demonstrate a clear mismatch between respondents�
   <img src="notebooks/imgs/Data Types That Respondents Are Comfortable with Data Brokers Collecting.svg" alt="Data Types That Respondents Are Comfortable with Data Brokers Collecting">
 </p>
 <p align="center">
-  <small><i><b>Figure 8:</b> Data Types That Respondents Are Comfortable with Data Brokers Collecting</i></small>
+  <small><i><b>Figure 8:</b> This figure displays the frequencies at which survey respondents were comfortable with data brokers collecting several sensitive types of data.</i></small>
 </p>
 
 In terms of the purposes personal data collected by data brokers is used for, the most “approved” category was personalized advertising (62.9%), and then marketing (43.6%) and employment (25.8%). Results indicated general disapproval around their personal data being used across purposes—24.2% responded that they were uncomfortable with all the options. These results are shown in Figure 9.
@@ -196,7 +196,7 @@ Respondents also indicated extreme disapproval with their data shared with corpo
   <img src="notebooks/imgs/Entities That Respondents Are Comfortable With Their Data Shared To.svg" alt="Entities That Respondents Are Comfortable With Their Data Shared To">
 </p>
 <p align="center">
-  <small><i><b>Figure 10:</b> Entities That Respondents Are Comfortable With Their Data Shared To</i></small>
+  <small><i><b>Figure 10:</b>  This figure displays the frequencies at which survey respondents were comfortable with data brokers sharing their personal data with several entities.</i></small>
 </p>
 
 Our survey also asked respondents about provisions and safeguards they would like to see in privacy policies and laws. The most frequently selected provision was the “Option to opt out of data collection or sharing” at 93.6%, and then protections against discrimination (83.9%) and the right to access personal data (77.4%). That said, all the listed provisions were selected at least 69% frequency. This data is displayed in Figure 11.
@@ -205,7 +205,7 @@ Our survey also asked respondents about provisions and safeguards they would lik
   <img src="notebooks/imgs/Provisions In Privacy Policies and Laws Respondents Desire.svg" alt="Provisions In Privacy Policies and Laws Respondents Desire">
 </p>
 <p align="center">
-  <small><i><b>Figure 11:</b> Provisions In Privacy Policies and Laws Respondents Desire</i></small>
+  <small><i><b>Figure 11:</b> This figure displays the frequencies at which survey respondents desired several user rights and controls in data broker privacy policies and laws.</i></small>
 </p>
 
 Lastly, we were curious about the attitudes of Californian residents toward the DELETE Act, one of the most forward-thinking privacy statutes governing the data broker industry. Of the 12 Californian respondents surveyed, a quarter were aware of the DELETE Act prior to the survey. After providing a description of the Act’s tools, a quarter stated they intend to use the DELETE Act’s mechanisms once they become active, and two-thirds indicated that they might use them.
@@ -267,14 +267,14 @@ The two data types that consumers find most permissible for data brokers to coll
   <img src="notebooks/imgs/Disparity - Data Types.svg" alt="Disparity in Data Types: Data Broker Collection vs. Consumer Comfort">
 </p>
 <p align="center">
-  <small><i><b>Figure 12:</b> Disparity in Data Types: Data Broker Collection vs. Consumer Comfort</i></small>
+  <small><i><b>Figure 12:</b> This figure displays disparities in the frequencies at which survey respondents were comfortable with the collection of several sensitive data types (blue) and the frequencies at which the data types were actually permitted to be collected, of the data explicitly reported in data broker privacy policies (red).</i></small>
 </p>
 
 <p align="center">
   <img src="notebooks/imgs/Disparity - Use Cases.svg" alt="Disparity in Use Cases: Data Broker Permitted vs. Consumer Comfort">
 </p>
 <p align="center">
-  <small><i><b>Figure 13:</b> Disparity in Use Cases: Data Broker Permitted vs. Consumer Comfort</i></small>
+  <small><i><b>Figure 13:</b> This figure displays disparities in the frequencies at which survey respondents were comfortable with their data being used for several purposes (blue) and the frequencies at which those uses were actually permitted, based on uses explicitly mentioned in data broker privacy policies (red).</i></small>
 </p>
 
 
