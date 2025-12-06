@@ -274,7 +274,7 @@ The two data types that consumers find most permissible for data brokers to coll
   <img src="notebooks/imgs/Disparity - Use Cases.svg" alt="Disparity in Use Cases: Data Broker Permitted vs. Consumer Comfort">
 </p>
 <p align="center">
-  <small><i><b>Figure 13:</b> This figure displays disparities between the percentages of survey respondents who were comfortable with their data being used for several purposes (blue) and the percentages at which those uses were actually permitted, based on what data brokers explicitly reported in their privacy policies(red).</i></small>
+  <small><i><b>Figure 13:</b> This figure displays disparities between the percentages of survey respondents who were comfortable with their data being used for several purposes (blue) and the percentages at which those uses were actually permitted, based on what data brokers explicitly reported in their privacy policies (red).</i></small>
 </p>
 
 
