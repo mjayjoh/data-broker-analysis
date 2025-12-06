@@ -24,7 +24,7 @@ def create_gap_chart_data_types(df_brokers, df_survey):
         "Biometric data": "CollectsBiometricData",
         "Minors' data": "CollectsMinorsData",
         "Reproductive health-related information": "CollectsReproductiveHealthData",
-        "Social Security Number and government ID information": "CollectsSSNGovID",
+        "Governmental": "CollectsSSNGovID",
         "Network data": "CollectsNetworkData"
     }
 
@@ -51,35 +51,37 @@ def create_gap_chart_data_types(df_brokers, df_survey):
         "Biometric data (e.g., fingerprint, voice, facial recognition)": "Biometric data",
         "Personal information of individuals under 18": "Minors' data",
         "Reproductive health-related information": "Reproductive health-related information",
-        "Social Security Number and government ID information": "Social Security Number and government ID information",
+        "Social Security Number and government ID information": "Governmental",
         "Network data (e.g., IP address, browsing history)": "Network data"
     }
 
     survey_comfort_counts = {}
+    for _cat, short_name in consumer_category_map.items():
+        survey_comfort_counts[short_name] = 0
+
     for responses in df_survey[comfort_col].dropna():
-        for item in str(responses).split(', '):
-            standardized_item = consumer_category_map.get(item.strip(), item.strip())
-            survey_comfort_counts[standardized_item] = survey_comfort_counts.get(standardized_item, 0) + 1
+        for category_long_name, category_short_name in consumer_category_map.items():
+            if category_long_name in responses:
+                survey_comfort_counts[category_short_name] = survey_comfort_counts.get(category_short_name, 0) + 1
     
     total_respondents = len(df_survey)
     consumer_percentages = []
     for category, count in survey_comfort_counts.items():
-        if category in broker_data_types.keys(): # Only include categories present in broker data
-            percentage = (count / total_respondents) * 100
-            consumer_percentages.append({'Category': category, 'Source': 'Consumers', 'Percentage': percentage})
+        percentage = (count / total_respondents) * 100
+        consumer_percentages.append({'Category': category, 'Source': 'Consumers', 'Percentage': percentage})
 
     # Combine and Clean
     combined_df = pd.DataFrame(broker_percentages + consumer_percentages)
     
     # Ensure all categories have both consumer and broker data for charting
-    # Filter for categories that exist in both sets
-    common_categories = set(combined_df[combined_df['Source'] == 'Data Brokers (Reported)']['Category']).intersection(
-                            set(combined_df[combined_df['Source'] == 'Consumers']['Category']))
-    combined_df = combined_df[combined_df['Category'].isin(common_categories)]
+    pivoted_df = combined_df.pivot_table(index='Category', columns='Source', values='Percentage').fillna(0)
+    combined_df = pivoted_df.reset_index().melt(id_vars='Category', var_name='Source', value_name='Percentage')
 
 
     # Sort categories for consistent plotting order
-    sort_order = [
+    all_categories = combined_df['Category'].unique()
+    
+    existing_sort_order = [
         "Commercial transactions data",
         "Employment-related data",
         "Location data",
@@ -87,9 +89,14 @@ def create_gap_chart_data_types(df_brokers, df_survey):
         "Minors' data",
         "Biometric data",
         "Reproductive health-related information",
-        "Social Security Number and government ID information"
+        "Governmental"
     ]
-    combined_df['Category'] = pd.Categorical(combined_df['Category'], categories=sort_order, ordered=True)
+    
+    ordered_categories = [cat for cat in existing_sort_order if cat in all_categories]
+    new_categories = sorted([cat for cat in all_categories if cat not in ordered_categories])
+    dynamic_sort_order = ordered_categories + new_categories
+    
+    combined_df['Category'] = pd.Categorical(combined_df['Category'], categories=dynamic_sort_order, ordered=True)
     combined_df = combined_df.sort_values('Category')
 
     return combined_df
@@ -131,34 +138,41 @@ def create_gap_chart_use_cases(df_brokers, df_survey):
     }
 
     survey_comfort_use_cases_counts = {}
+    for _cat, short_name in consumer_use_case_map.items():
+        survey_comfort_use_cases_counts[short_name] = 0
+        
     for responses in df_survey[comfort_col_use_cases].dropna():
-        for item in str(responses).split(', '):
-            standardized_item = consumer_use_case_map.get(item.strip(), item.strip())
-            survey_comfort_use_cases_counts[standardized_item] = survey_comfort_use_cases_counts.get(standardized_item, 0) + 1
+        for category_long_name, category_short_name in consumer_use_case_map.items():
+            if category_long_name in responses:
+                survey_comfort_use_cases_counts[category_short_name] = survey_comfort_use_cases_counts.get(category_short_name, 0) + 1
     
     total_respondents = len(df_survey)
     consumer_use_cases_percentages = []
     for category, count in survey_comfort_use_cases_counts.items():
-        # Only include categories present in the hardcoded broker data for now
-        if category in [uc['Category'] for uc in broker_use_case_percentages]:
-            percentage = (count / total_respondents) * 100
-            consumer_use_cases_percentages.append({'Category': category, 'Source': 'Consumers', 'Percentage': percentage})
+        percentage = (count / total_respondents) * 100
+        consumer_use_cases_percentages.append({'Category': category, 'Source': 'Consumers', 'Percentage': percentage})
 
     # Combine and Clean
     combined_df = pd.DataFrame(broker_use_case_percentages + consumer_use_cases_percentages)
     
     # Ensure all categories have both consumer and broker data for charting
-    common_categories = set(combined_df[combined_df['Source'] == 'Data Brokers (Explicit)']['Category']).intersection(
-                            set(combined_df[combined_df['Source'] == 'Consumers']['Category']))
-    combined_df = combined_df[combined_df['Category'].isin(common_categories)]
+    pivoted_df = combined_df.pivot_table(index='Category', columns='Source', values='Percentage').fillna(0)
+    combined_df = pivoted_df.reset_index().melt(id_vars='Category', var_name='Source', value_name='Percentage')
 
     # Sort categories for consistent plotting order
-    sort_order = [
+    all_categories = combined_df['Category'].unique()
+    
+    existing_sort_order = [
         "Marketing",
         "Personalized advertising",
         "Employment decisions"
     ]
-    combined_df['Category'] = pd.Categorical(combined_df['Category'], categories=sort_order, ordered=True)
+    
+    ordered_categories = [cat for cat in existing_sort_order if cat in all_categories]
+    new_categories = sorted([cat for cat in all_categories if cat not in ordered_categories])
+    dynamic_sort_order = ordered_categories + new_categories
+    
+    combined_df['Category'] = pd.Categorical(combined_df['Category'], categories=dynamic_sort_order, ordered=True)
     combined_df = combined_df.sort_values('Category')
     
     return combined_df
