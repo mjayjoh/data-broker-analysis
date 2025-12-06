@@ -295,7 +295,6 @@ Beyond encouraging legal compliance, our findings suggest that agencies can take
 
 Our results reveal a significant disconnect between consumer preferences, data brokers, and laws. Data brokers cannot self-regulate. Regulators must intervene. Without meaningful action, data brokers will continue profiting from our most intimate data in the shadows—information that can be weaponized against us.
 
-## Footnotes
 [^1]: *FTC Takes Action against Gravy Analytics, Venntel for Unlawfully Selling Location Data Tracking Consumers to Sensitive Sites*, 2024
 [^2]: *FTC Takes Action against Mobilewalla for Collecting and Selling Sensitive Location Data*, 2024; Pegoraro, 2020; Lomas, 2018; Sherman, 2023
 [^3]: Electronic Privacy Information Center, n.d.
