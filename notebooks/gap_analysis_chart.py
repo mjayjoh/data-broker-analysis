@@ -56,10 +56,13 @@ def create_gap_chart_data_types(df_brokers, df_survey):
     }
 
     survey_comfort_counts = {}
+    for _cat, short_name in consumer_category_map.items():
+        survey_comfort_counts[short_name] = 0
+
     for responses in df_survey[comfort_col].dropna():
-        for item in str(responses).split(', '):
-            standardized_item = consumer_category_map.get(item.strip(), item.strip())
-            survey_comfort_counts[standardized_item] = survey_comfort_counts.get(standardized_item, 0) + 1
+        for category_long_name, category_short_name in consumer_category_map.items():
+            if category_long_name in responses:
+                survey_comfort_counts[category_short_name] = survey_comfort_counts.get(category_short_name, 0) + 1
     
     total_respondents = len(df_survey)
     consumer_percentages = []
@@ -135,10 +138,13 @@ def create_gap_chart_use_cases(df_brokers, df_survey):
     }
 
     survey_comfort_use_cases_counts = {}
+    for _cat, short_name in consumer_use_case_map.items():
+        survey_comfort_use_cases_counts[short_name] = 0
+        
     for responses in df_survey[comfort_col_use_cases].dropna():
-        for item in str(responses).split(', '):
-            standardized_item = consumer_use_case_map.get(item.strip(), item.strip())
-            survey_comfort_use_cases_counts[standardized_item] = survey_comfort_use_cases_counts.get(standardized_item, 0) + 1
+        for category_long_name, category_short_name in consumer_use_case_map.items():
+            if category_long_name in responses:
+                survey_comfort_use_cases_counts[category_short_name] = survey_comfort_use_cases_counts.get(category_short_name, 0) + 1
     
     total_respondents = len(df_survey)
     consumer_use_cases_percentages = []
