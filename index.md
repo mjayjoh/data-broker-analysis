@@ -336,3 +336,8 @@ Our results reveal a significant disconnect between consumer preferences, data b
 - Solove, D. J. (2023, March 25). *The Limitations of Privacy Rights.* Notre Dame Law Review. https://ndlawreview.org/the-limitations-of-privacy-rights/
 - Texas Data Privacy and Security Act, Tex. Bus. & Com. Code Ann. § 541.001 *et seq.* (2024).
 - Trujillo, M., & Tsukayama, H. (2025, June 24). *Why Are Hundreds of Data Brokers Not Registering with States?* Electronic Frontier Foundation. https://www.eff.org/deeplinks/2025/06/why-are-hundreds-data-brokers-not-registering-states
+
+## Github Repository
+
+This is the github repository that our project is based on.
+https://github.com/Data259-Autumn25/group-project-michelle-ornella-minjae
