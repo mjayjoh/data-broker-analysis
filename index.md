@@ -61,7 +61,7 @@ By now, you might feel uneasy, but perhaps you’re wondering: what is the real 
   </tbody>
 </table>
 <p align="center">
-  <small><i><b>Table 1:</b> Names and Practices of a Few Major Data Broker Agencies.</i></small>
+  <small><i><b>Table 1:</b> Names and Practices of a Few Major Data Broker Agencies</i></small>
 </p>
 
 ## What we did
